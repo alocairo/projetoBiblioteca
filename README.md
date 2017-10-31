@@ -5,7 +5,7 @@ Version 1.0.3 Added the following views :<br>
 	<li>gerenciarAlunos</li>
 	<li>gerenciarCategoria</li>
 	<li>gerenciarFuncionario</li>
-	<li>livros<li>
+	<li>livros</li>
 </ul><br>
 
 Version 1.0.2 Added War Project File <br>
