@@ -18,8 +18,8 @@
     <li>&#9744; Fazer as telas de Cadastro:
         <ul>&#9745; Aluno;
             <br>&#9745; Livro;
-            <br>&#9744; Categoria;
-            <br>&#9744; Funcionario;
+            <br>&#9745; Categoria;
+            <br>&#9745; Funcionario;
             <br>&#9744; Biblioteca;
             <br>&#9744; e demais que achar necessário.
         </ul>
