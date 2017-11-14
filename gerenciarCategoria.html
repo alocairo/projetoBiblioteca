@@ -15,6 +15,10 @@
             padding-top: 80px;
             word-wrap: break-word;
         }
+
+        .margin-fix {
+            margin-bottom: 20px;
+        }
     </style>
 
 </head>
@@ -97,6 +101,29 @@
 
             </tbody>
         </table>
+
+
+        <h2><i class="fa fa-bookmark" aria-hidden="true"></i> Gerenciar Categorias</h2>
+
+        <form>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>CÓDIGO</th>
+                        <th>DESCRIÇÃO</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" name="altMatricula" placeholder="CÓDIGO" required></td>
+                        <td><input type="text" class="form-control" name="altNome" placeholder="DESCRIÇÃO"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="container margin-fix">
+                <button type="button" class="btn btn-primary btn-xs">Inserir</button>
+                <button type="button" class="btn btn-primary btn-xs">Alterar</button>
+                <button type="button" class="btn btn-primary btn-xs">Excluir</button>
+            </div>
+        </form>
 
 
     </div>
