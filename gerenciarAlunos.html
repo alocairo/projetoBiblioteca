@@ -15,7 +15,12 @@
             padding-top: 80px;
             word-wrap: break-word;
         }
+
+        .margin-fix {
+            margin-bottom: 20px;
+        }
     </style>
+
 
 </head>
 
@@ -56,7 +61,6 @@
                     <th>Nome</th>
                     <th>Endereço</th>
                     <th>Situação</th>
-                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -66,12 +70,6 @@
                     <td>Maria Paula</td>
                     <td>Assis Brasil, 110</td>
                     <td>Ativo</td>
-                    <td>
-                        <a href="./cadastrarAluno.html"> <button type="button" class="btn btn-primary btn-xs">Inserir</button></a>
-                        <button type="button" class="btn btn-primary btn-xs">Alterar</button>
-                        <button type="button" class="btn btn-primary btn-xs">Desativar</button>
-                        <button type="button" class="btn btn-primary btn-xs">Excluir</button>
-                    </td>
                 </tr>
 
                 <tr>
@@ -79,12 +77,6 @@
                     <td>Mauro Eduardo</td>
                     <td>Carlos Gomes, 150</td>
                     <td>Ativo</td>
-                    <td>
-                        <a href="file:///C:/Users/adriano.chaves/Desktop/projetoBiblioteca/cadastrarAluno.html"> <button type="button" class="btn btn-primary btn-xs">Inserir</button></a>
-                        <button type="button" class="btn btn-primary btn-xs">Alterar</button>
-                        <button type="button" class="btn btn-primary btn-xs">Desativar</button>
-                        <button type="button" class="btn btn-primary btn-xs">Excluir</button>
-                    </td>
                 </tr>
 
                 <tr>
@@ -92,12 +84,6 @@
                     <td>Joao Gilberto</td>
                     <td>Andradas, 1200</td>
                     <td>Inativo</td>
-                    <td>
-                        <a href="file:///C:/Users/adriano.chaves/Desktop/projetoBiblioteca/cadastrarAluno.html"> <button type="button" class="btn btn-primary btn-xs">Inserir</button></a>
-                        <button type="button" class="btn btn-primary btn-xs">Alterar</button>
-                        <button type="button" class="btn btn-primary btn-xs">Desativar</button>
-                        <button type="button" class="btn btn-primary btn-xs">Excluir</button>
-                    </td>
                 </tr>
 
                 <tr>
@@ -105,16 +91,40 @@
                     <td>Paulo Gomes</td>
                     <td>Jose do Patrocinio, 500</td>
                     <td>Ativo</td>
-                    <td>
-                        <a href="file:///C:/Users/adriano.chaves/Desktop/projetoBiblioteca/cadastrarAluno.html"> <button type="button" class="btn btn-primary btn-xs">Inserir</button></a>
-                        <button type="button" class="btn btn-primary btn-xs">Alterar</button>
-                        <button type="button" class="btn btn-primary btn-xs">Desativar</button>
-                        <button type="button" class="btn btn-primary btn-xs">Excluir</button>
-                    </td>
                 </tr>
-
             </tbody>
         </table>
+
+        <h2><i class="fa fa-users" aria-hidden="true"></i> Gerenciar Alunos</h2>
+
+        <form>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>MATRICULA</th>
+                        <th>NOME</th>
+                        <th>ENDEREÇO</th>
+                        <th>SITUAÇÃO</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" name="altMatricula" placeholder="MATRICULA" required></td>
+                        <td><input type="text" class="form-control" name="altNome" placeholder="NOME"></td>
+                        <td><input type="text" class="form-control" name="altEndereco" placeholder="ENDERECO"></td>
+                        <td><input type="text" class="form-control" name="altSituacao" placeholder="SITUACAO"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="container margin-fix">
+                <button type="button" class="btn btn-primary btn-xs">Inserir</button>
+                <button type="button" class="btn btn-primary btn-xs">Alterar</button>
+                <button type="button" class="btn btn-primary btn-xs">Desativar</button>
+                <button type="button" class="btn btn-primary btn-xs">Excluir</button>
+            </div>
+        </form>
+
+
+
+
     </div>
     <footer class="py-5 bg-dark">
         <div class="container">
