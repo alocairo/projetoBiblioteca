@@ -15,6 +15,10 @@
             padding-top: 80px;
             word-wrap: break-word;
         }
+
+        .margin-fix {
+            margin-bottom: 20px;
+        }
     </style>
 
 </head>
@@ -120,6 +124,43 @@
 
             </tbody>
         </table>
+        
+        
+        
+                <h2><i class="fa fa-address-card" aria-hidden="true"></i> Gerenciar Funcionário</h2>
+
+        <form>
+            <table class="table">
+                <tbody>
+                    <tr>
+                    <th>Codigo</th>
+                    <th>Nome</th>
+                    <th>Endereço</th>
+                    <th>Telefone</th>
+                    <th>Salário</th>
+                    <th>Biblioteca</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" name="altCodigo" placeholder="CODIGO" required></td>
+                        <td><input type="text" class="form-control" name="altNome" placeholder="NOME"></td>
+                        <td><input type="text" class="form-control" name="altEndereco" placeholder="ENDEREÇO"></td>
+                        <td><input type="text" class="form-control" name="altTelefone" placeholder="TELEFONE"></td>
+                        <td><input type="text" class="form-control" name="altSalario" placeholder="SALARIO"></td>
+                        <td><input type="text" class="form-control" name="altBiblioteca" placeholder="BIBLIOTECA"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="container margin-fix">
+                <button type="button" class="btn btn-primary btn-xs">Inserir</button>
+                <button type="button" class="btn btn-primary btn-xs">Alterar</button>
+                <button type="button" class="btn btn-primary btn-xs">Excluir</button>
+            </div>
+        </form>
+
+        
+        
+        
+        
 
 
     </div>
