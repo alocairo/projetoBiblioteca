@@ -110,7 +110,13 @@
                         <td><input type="text" class="form-control" name="altMatricula" placeholder="MATRICULA" required></td>
                         <td><input type="text" class="form-control" name="altNome" placeholder="NOME"></td>
                         <td><input type="text" class="form-control" name="altEndereco" placeholder="ENDERECO"></td>
-                        <td><input type="text" class="form-control" name="altSituacao" placeholder="SITUACAO"></td>
+                        <td>
+                            <select class="form-control" id="situacao">
+                            <option value="" disabled selected>SITUAÇÃO</option>    
+                            <option value="desabilitado">Desabilitado</option>
+                            <option value="habilitado">Habilitado</option>
+                            </select>
+                        </td>
                     </tr>
                 </tbody>
             </table>
