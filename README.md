@@ -55,7 +55,6 @@
                 <li>Caso Ativo: Link direto para o sistema de empréstimo</li>
                 <li>Caso Inativo: Mostrar os dados de quando este livro estará disponível novamente</li>
             </ul>
-
         </ul>
     </li>
     <li>Possibilidade de Exclusão (Deletar)
@@ -63,7 +62,6 @@
             Deve ser possível deletar:
             <ul>&#9744; Categoria;
                 <br>&#9744; Funcionario.</ul>
-
             <strong>No Entanto não deve ser excluído do sistema: aluno, livro, emprestimo</strong>
         </ul>
     </li>
