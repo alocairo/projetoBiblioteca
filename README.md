@@ -9,6 +9,7 @@
             <br>&#9745; FRONT &#9745; BACK - Categoria;
             <br>&#9745; FRONT &#9745; BACK - Funcionario;
             <br>&#9745; FRONT &#9745; BACK - Biblioteca;
+            <br>&#9745; FRONT - Index;
             <br>&#9744; e demais que achar necessário.
         </ul>
     </li>
