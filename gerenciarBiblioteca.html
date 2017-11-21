@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>BIBLIOTECA - Categoria</title>
+    <title>BIBLIOTECA - Alunos</title>
 
     <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,7 @@
             margin-bottom: 20px;
         }
     </style>
+
 
 </head>
 
@@ -52,65 +53,55 @@
 
         <div class="page-header text-center">
             <h1>
-                <i class="fa fa-user" aria-hidden="true"></i> Categoria</h1>
+                <i class="fa fa-building" aria-hidden="true"></i> Bibliotecas</h1>
         </div>
 
         <table class="table table-inverse">
             <thead>
                 <tr>
-                    <th>Codigo</th>
-                    <th>Descrição</th>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Endereço</th>
                 </tr>
             </thead>
             <tbody>
                 <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
                 <tr>
-                    <td>25</td>
-                    <td>Ficação</td>
+                    <td>1</td>
+                    <td>Biblioteca Municipal de Canoas</td>
+                    <td>XV de Janeiro, 270</td>
                 </tr>
-
-                <tr>
-                    <td>35</td>
-                    <td>Romance</td>
-                </tr>
-
-                <tr>
-                    <td>45</td>
-                    <td>Literatura</td>
-                </tr>
-
-                <tr>
-                    <td>55</td>
-                    <td>Ciêntifico</td>
-                </tr>
-
             </tbody>
         </table>
 
         <h2>
-            <i class="fa fa-bookmark" aria-hidden="true"></i> Gerenciar Categorias</h2>
+            <i class="fa fa-cog" aria-hidden="true"></i> Gerenciar Bibliotecas</h2>
 
         <form>
             <table class="table">
                 <tbody>
                     <tr>
-                        <th>CÓDIGO</th>
-                        <th>DESCRIÇÃO</th>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Endereço</th>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" class="form-control" name="altCodigo" placeholder="CÓDIGO" required>
+                            <input type="text" class="form-control" name="altCodigo" placeholder="CODIGO" required>
                         </td>
                         <td>
-                            <input type="text" class="form-control" name="altDescricao" placeholder="DESCRIÇÃO">
+                            <input type="text" class="form-control" name="altNome" placeholder="NOME">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" name="altEndereco" placeholder="ENDERECO">
                         </td>
                     </tr>
                 </tbody>
             </table>
             <div class="container margin-fix">
-                <button type="submmit" class="btn btn-primary btn-xs">Inserir</button>
-                <button type="submmit" class="btn btn-primary btn-xs">Alterar</button>
-                <button type="submmit" class="btn btn-primary btn-xs">Excluir</button>
+                <button type="button" class="btn btn-primary btn-xs">Inserir</button>
+                <button type="button" class="btn btn-primary btn-xs">Alterar</button>
+
             </div>
         </form>
     </div>
