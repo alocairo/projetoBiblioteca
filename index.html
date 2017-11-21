@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>BIBLIOTECA - Administração</title>
+    <title>BIBLIOTECA - Categoria</title>
 
     <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -13,18 +13,19 @@
     <style>
         body {
             padding-top: 80px;
+            word-wrap: break-word;
         }
 
-        form {
+        .margin-fix {
             margin-bottom: 20px;
         }
     </style>
+
 </head>
 
 <body>
-    <div class="container text-center">
+    <div class="container">
 
-        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="http://localhost:8080/">BIBLIOTECA</a>
@@ -60,7 +61,9 @@
             <div class="card col-lg-4 col-md-6 mb-4">
                 <h3 class="card-header primary-color white-text">Gerenciamento de Aluno</h3>
                 <div class="card-body">
-                    <h4 class="card-title"><i class="fa fa-users" aria-hidden="true"></i></h4>
+                    <h4 class="card-title">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </h4>
                     <p class="card-text">Página que permite o gerenciamento de alunos.</p>
                     <a href="./gerenciarAlunos.html" target="_blank" class="btn btn-primary">Gereciar</a>
                 </div>
@@ -69,7 +72,9 @@
             <div class="card col-lg-4 col-md-6 mb-4 h-100">
                 <h3 class="card-header primary-color white-text">Gerenciamento de Biblioteca</h3>
                 <div class="card-body">
-                    <h4 class="card-title"><i class="fa fa-building" aria-hidden="true"></i></h4>
+                    <h4 class="card-title">
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </h4>
                     <p class="card-text">Página que permite o gerenciamento de bibliotecas.</p>
                     <a href="./gerenciarBiblioteca.html" target="_blank" class="btn btn-primary">Gerenciar</a>
                 </div>
@@ -78,7 +83,9 @@
             <div class="card col-lg-4 col-md-6 mb-4 h-100">
                 <h3 class="card-header primary-color white-text">Gerenciamento de Categoria</h3>
                 <div class="card-body">
-                    <h4 class="card-title"><i class="fa fa-server" aria-hidden="true"></i></h4>
+                    <h4 class="card-title">
+                        <i class="fa fa-server" aria-hidden="true"></i>
+                    </h4>
                     <p class="card-text">Página que permite o gerenciamento de categoria.</p>
                     <a href="./gerenciarCategoria.html" target="_blank" class="btn btn-primary">Gerenciar</a>
                 </div>
@@ -87,16 +94,21 @@
             <div class="card col-lg-4 col-md-6 mb-4 h-100">
                 <h3 class="card-header primary-color white-text">Gerenciamento de Funcionário</h3>
                 <div class="card-body">
-                    <h4 class="card-title"><i class="fa fa-user-circle-o" aria-hidden="true"></i></h4>
+                    <h4 class="card-title">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </h4>
                     <p class="card-text">Página que permite o gerenciamento de funcionário.</p>
                     <a href="./gerenciarFuncionario.html" target="_blank" class="btn btn-primary">Gerenciar</a>
                 </div>
             </div>
 
             <div class="card col-lg-4 col-md-6 mb-4 h-100">
-                <h3 class="card-header primary-color white-text">Gerenciamento de<br> Livro</h3>
+                <h3 class="card-header primary-color white-text">Gerenciamento de
+                    <br> Livro</h3>
                 <div class="card-body">
-                    <h4 class="card-title"><i class="fa fa-book" aria-hidden="true"></i></h4>
+                    <h4 class="card-title">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                    </h4>
                     <p class="card-text">Página que permite o gerenciamento de livro.</p>
                     <a href="./gerenciarLivros.html" target="_blank" class="btn btn-primary">Gerenciar</a>
                 </div>
@@ -104,29 +116,25 @@
         </div>
         <!--/.Panel-->
 
+    </div>
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center">
+                <a href="https://github.com/AdrianoCh">
+                    <i class="fa fa-github-alt" aria-hidden="true"></i> AdrianoCh</a>
+            </p>
+            <p class="m-0 text-center">
+                <a href="https://github.com/alocairo">
+                    <i class="fa fa-github-alt" aria-hidden="true"></i> alocairo</a>
+            </p>
+            <p class="m-0 text-center text-white">
+                <a href="https://github.com/AdrianoCh/projetoBiblioteca">Project Avaliable Here
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                </a>
+            </p>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="./Style/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-        <footer class="py-5 bg-dark">
-            <div class="container">
-                <p class="m-0 text-center">
-                    <a href="https://github.com/AdrianoCh">
-                        <i class="fa fa-github-alt" aria-hidden="true"></i> AdrianoCh</a>
-                </p>
-                <p class="m-0 text-center">
-                    <a href="https://github.com/alocairo">
-                        <i class="fa fa-github-alt" aria-hidden="true"></i> alocairo</a>
-                </p>
-                <p class="m-0 text-center text-white">
-                    <a href="https://github.com/AdrianoCh/projetoBiblioteca">Project Avaliable Here
-                        <i class="fa fa-github-square" aria-hidden="true"></i>
-                    </a>
-                </p>
-            </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 
 </html>
