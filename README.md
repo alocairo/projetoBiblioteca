@@ -8,15 +8,15 @@
             <br>&#9745; FRONT &#9745; BACK - Livro;
             <br>&#9745; FRONT &#9745; BACK - Categoria;
             <br>&#9745; FRONT &#9745; BACK - Funcionario;
-            <br>&#9744; FRONT &#9745; BACK - Biblioteca;
+            <br>&#9745; FRONT &#9745; BACK - Biblioteca;
             <br>&#9744; e demais que achar necessário.
         </ul>
     </li>
     <li>&#9744;Possibilidade de Atualização dos Dados:
         <ul>&#9745; HTML &#9745; BACK - Aluno;
             <br>&#9745; FRONT &#9745; BACK - Funcionario;
-            <br>&#9744; FRONT &#9745; BACK - Livro;
-            <br>&#9744; FRONT &#9745; BACK - Biblioteca;
+            <br>&#9745; FRONT &#9745; BACK - Livro;
+            <br>&#9745; FRONT &#9745; BACK - Biblioteca;
             <br>&#9745; FRONT &#9745; BACK - Categoria;
             <br>&#9744; e demais que achar necessario.
         </ul>
