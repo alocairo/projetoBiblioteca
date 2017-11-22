@@ -56,11 +56,6 @@
                 <i class="fa fa-id-card" aria-hidden="true"></i> Alunos</h1>
         </div>
 
-        <div class="row">
-            <div class="col-lg-4 col-lg-offset-4">
-                <input type="search" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="DIGITE AQUI PARA PESQUISAR">
-            </div>
-        </div>
         <table class="table table-inverse" id="myTable">
             <thead>
                 <tr>
@@ -90,7 +85,7 @@
                     <td>320</td>
                     <td>Joao Gilberto</td>
                     <td>Andradas, 1200</td>
-                    <td>Inativo</td>
+                    <td>Desabilitado</td>
                 </tr>
 
                 <tr>
@@ -116,19 +111,20 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" class="form-control" name="altMatricula" placeholder="MATRICULA" required>
+                            <input name="altMatricula" type="search" id="dadoMatricula" onkeyup="buscaMatricula()" class="form-control" placeholder="MATRICULA">
                         </td>
                         <td>
-                            <input type="text" class="form-control" name="altNome" placeholder="NOME">
+                            <input name="altNome" type="search" id="dadoNome" onkeyup="buscaNome()" class="form-control" placeholder="NOME">
                         </td>
                         <td>
-                            <input type="text" class="form-control" name="altEndereco" placeholder="ENDERECO">
+                            <input name="altEndereco" type="search" id="dadoEndereco" onkeyup="buscaEndereco()" class="form-control" placeholder="NOME">
                         </td>
                         <td>
-                            <select class="form-control" id="situacao">
+                            <select class="form-control" id="dadoSituacao" onchange="buscaSituacao()">
                                 <option value="" disabled selected>SITUAÇÃO</option>
-                                <option value="desabilitado">Desabilitado</option>
-                                <option value="habilitado">Habilitado</option>
+                                <option value="Ativo">Ativo</option>
+                                <option value="Desabilitado">Desabilitado</option>
+                                <option value="">Limpa Filtro</option>
                             </select>
                         </td>
                     </tr>
