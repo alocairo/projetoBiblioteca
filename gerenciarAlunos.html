@@ -56,7 +56,12 @@
                 <i class="fa fa-id-card" aria-hidden="true"></i> Alunos</h1>
         </div>
 
-        <table class="table table-inverse">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4">
+                <input type="search" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="DIGITE AQUI PARA PESQUISAR">
+            </div>
+        </div>
+        <table class="table table-inverse" id="myTable">
             <thead>
                 <tr>
                     <th>Matricula</th>
@@ -142,6 +147,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./Style/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Include custom JS for searchbox -->
+    <script src="./js/customAlunos.js"></script>
 
     <footer class="py-5 bg-dark">
         <div class="container">
