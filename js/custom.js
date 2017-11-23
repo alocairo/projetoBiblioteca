@@ -98,3 +98,40 @@ function buscaBibliotecaFuncionario() {
   filter = document.getElementById("dadoBibliotecaFuncionario").value.toUpperCase();
   busca(5);
 }
+
+//-----------------> functions for livros <----------------------------------
+
+function buscaCodigoLivro() {
+  filter = document.getElementById("dadoCodigoLivro").value.toUpperCase();
+  busca(0);
+}
+
+function buscaTituloLivro() {
+  filter = document.getElementById("dadoTituloLivro").value.toUpperCase();
+  busca(1);
+}
+
+function buscaEditoraLivro() {
+  filter = document.getElementById("dadoEditoraLivro").value.toUpperCase();
+  busca(2);
+}
+
+function buscaValorLivro() {
+  filter = document.getElementById("dadoValorLivro").value.toUpperCase();
+  busca(3);
+}
+
+function buscaCategoriaLivro() {
+  filter = document.getElementById("dadoCategoriaLivro").value.toUpperCase();
+  busca(4);
+}
+
+function buscaBibliotecaLivro() {
+  filter = document.getElementById("dadoBibliotecaLivro").value.toUpperCase();
+  busca(5);
+}
+
+function buscaSituacaoLivro() {
+  filter = document.getElementById("dadoSituacaoLivro").value.toUpperCase();
+  busca(5);
+}
