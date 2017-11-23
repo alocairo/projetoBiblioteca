@@ -66,3 +66,35 @@ function buscaDescricaoCategoria() {
   filter = document.getElementById("dadoDescricaoCategoria").value.toUpperCase();
   busca(1);
 }
+
+//-------------> functions for funcionario <-------------------------------------
+
+function buscaCodigoFuncionario() {
+  filter = document.getElementById("dadoCodigoFuncionario").value.toUpperCase();
+  busca(0);
+}
+
+function buscaNomeFuncionario() {
+  filter = document.getElementById("dadoNomeFuncionario").value.toUpperCase();
+  busca(1);
+}
+
+function buscaEnderecoFuncionario() {
+  filter = document.getElementById("dadoEnderecoFuncionario").value.toUpperCase();
+  busca(2);
+}
+
+function buscaTelefoneFuncionario() {
+  filter = document.getElementById("dadoTelefoneFuncionario").value.toUpperCase();
+  busca(3);
+}
+
+function buscaSalarioFuncionario() {
+  filter = document.getElementById("dadoSalarioFuncionario").value.toUpperCase();
+  busca(4);
+}
+
+function buscaBibliotecaFuncionario() {
+  filter = document.getElementById("dadoBibliotecaFuncionario").value.toUpperCase();
+  busca(5);
+}
