@@ -55,30 +55,30 @@
             <h1>
                 <i class="fa fa-building" aria-hidden="true"></i> Bibliotecas</h1>
         </div>
-      
-      <table class="table table-inverse" id="myTable">
-        <thead>
-            <tr>
-                <th>Codigo</th>
-                <th>Nome</th>
-                <th>Endereço</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
-            <tr>
-                <td>1</td>
-                <td>Biblioteca Municipal de Canoas</td>
-                <td>XV de Janeiro, 270</td>
-            </tr>
 
-            <tr>
-                <td>2</td>
-                <td>Biblioteca Municipal de Porto Alegre</td>
-                <td>XV, 270</td>
-            </tr>
-        </tbody>
-    </table>
+        <table class="table table-inverse" id="myTable">
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nome</th>
+                    <th>Endereço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
+                <tr>
+                    <td>1</td>
+                    <td>Biblioteca Municipal de Canoas</td>
+                    <td>XV de Janeiro, 270</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Biblioteca Municipal de Porto Alegre</td>
+                    <td>XV, 270</td>
+                </tr>
+            </tbody>
+        </table>
         <h2>
             <i class="fa fa-cog" aria-hidden="true"></i> Gerenciar Bibliotecas</h2>
 
@@ -92,13 +92,15 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="search" id="dadoCodigoBiblioteca" onkeyup="buscaCodigoBiblioteca()" class="form-control" name="altCodigo" placeholder="CODIGO" required>
+                            <input type="search" id="dadoCodigoBiblioteca" onkeyup="buscaCodigoBiblioteca()" class="form-control" name="altCodigo" placeholder="CODIGO"
+                                required>
                         </td>
                         <td>
                             <input type="search" id="dadoNomeBiblioteca" onkeyup="buscaNomeBiblioteca()" class="form-control" name="altNome" placeholder="NOME">
                         </td>
                         <td>
-                            <input type="search" id="dadoEnderecoBiblioteca" onkeyup="buscaEnderecoBiblioteca()" class="form-control" name="altEndereco" placeholder="ENDERECO">
+                            <input type="search" id="dadoEnderecoBiblioteca" onkeyup="buscaEnderecoBiblioteca()" class="form-control" name="altEndereco"
+                                placeholder="ENDERECO">
                         </td>
                     </tr>
                 </tbody>

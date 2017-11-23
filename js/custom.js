@@ -1,7 +1,6 @@
 var filter;
 function busca(x) {
-  var input, table, tr, td, i;
-  input = document.getElementById("dado");
+  var table, tr, td, i;
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
   console.log('o filtro é ' + filter)
@@ -54,4 +53,16 @@ function buscaNomeBiblioteca() {
 function buscaEnderecoBiblioteca() {
   filter = document.getElementById("dadoEnderecoBiblioteca").value.toUpperCase();
   busca(2);
+}
+
+//-------------> functions for categorias <-----------------------------
+
+function buscaCodigoCategoria() {
+  filter = document.getElementById("dadoCodigoCategoria").value.toUpperCase();
+  busca(0);
+}
+
+function buscaDescricaoCategoria() {
+  filter = document.getElementById("dadoDescricaoCategoria").value.toUpperCase();
+  busca(1);
 }
