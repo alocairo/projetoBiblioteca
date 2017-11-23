@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>BIBLIOTECA - Funcionarios</title>
+    <title>BIBLIOTECA - Funcionários</title>
 
     <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,7 @@
             margin-bottom: 20px;
         }
     </style>
+
 
 </head>
 
@@ -52,10 +53,10 @@
 
         <div class="page-header text-center">
             <h1>
-                <i class="fa fa-user" aria-hidden="true"></i> Funcionário</h1>
+                <i class="fa fa-id-card" aria-hidden="true"></i> Alunos</h1>
         </div>
 
-        <table class="table table-inverse">
+        <table class="table table-inverse" id="myTable">
             <thead>
                 <tr>
                     <th>Codigo</th>
@@ -103,14 +104,11 @@
                     <td>4500,00</td>
                     <td>Biblioteca Municipal Canoas</td>
                 </tr>
-
             </tbody>
         </table>
 
-
-
         <h2>
-            <i class="fa fa-address-card" aria-hidden="true"></i> Gerenciar Funcionário</h2>
+            <i class="fa fa-users" aria-hidden="true"></i> Gerenciar Funcionario</h2>
 
         <form>
             <table class="table">
@@ -125,22 +123,22 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" class="form-control" name="altCodigo" placeholder="CODIGO" required>
+                            <input name="altCodigoFuncionario" type="search" id="dadoCodigoFuncionario" onkeyup="buscaCodigoFuncionario()" class="form-control" placeholder="CODIGO">
                         </td>
                         <td>
-                            <input type="text" class="form-control" name="altNome" placeholder="NOME">
+                            <input name="altNomeFuncionario" type="search" id="dadoNomeFuncionario" onkeyup="buscaNomeFuncionario()" class="form-control" placeholder="NOME">
                         </td>
                         <td>
-                            <input type="text" class="form-control" name="altEndereco" placeholder="ENDEREÇO">
+                            <input name="altEnderecoFuncionario" type="search" id="dadoEnderecoFuncionario" onkeyup="buscaEnderecoFuncionario()" class="form-control" placeholder="ENDERECO">
                         </td>
                         <td>
-                            <input type="text" class="form-control" name="altTelefone" placeholder="TELEFONE">
+                            <input name="altTelefoneFuncionario" type="search" id="dadoTelefoneFuncionario" onkeyup="buscaTelefoneFuncionario()" class="form-control" placeholder="TELEFONE">
                         </td>
                         <td>
-                            <input type="text" class="form-control" name="altSalario" placeholder="SALARIO">
+                            <input name="altSalarioFuncionario" type="search" id="dadoSalarioFuncionario" onkeyup="buscaSalarioFuncionario()" class="form-control" placeholder="SALARIO">
                         </td>
                         <td>
-                            <input type="text" class="form-control" name="altBiblioteca" placeholder="BIBLIOTECA">
+                            <input name="altBibliotecaFuncionario" type="search" id="dadoBibliotecaFuncionario" onkeyup="buscaBibliotecaFuncionario()" class="form-control" placeholder="BIBLIOTECA">
                         </td>
                     </tr>
                 </tbody>
@@ -148,16 +146,18 @@
             <div class="container margin-fix">
                 <button type="button" class="btn btn-primary btn-xs">Inserir</button>
                 <button type="button" class="btn btn-primary btn-xs">Alterar</button>
-                <button type="button" class="btn btn-primary btn-xs">Excluir</button>
+                <button type="button" class="btn btn-primary btn-xs">Desativar</button>
+
             </div>
         </form>
-
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./Style/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Include custom JS for searchbox -->
+    <script src="./js/custom.js"></script>
 
     <footer class="py-5 bg-dark">
         <div class="container">
