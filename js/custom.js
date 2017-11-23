@@ -4,7 +4,7 @@ function busca(x) {
   input = document.getElementById("dado");
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
-  console.log('o filtro é ' +filter)
+  console.log('o filtro é ' + filter)
 
 
   for (i = 0; i < tr.length; i++) {
@@ -19,22 +19,39 @@ function busca(x) {
   }
 }
 
-function buscaMatricula(){
+function buscaMatricula() {
   filter = document.getElementById("dadoMatricula").value.toUpperCase();
   busca(0);
 }
 
-function buscaNome(){
+function buscaNome() {
   filter = document.getElementById("dadoNome").value.toUpperCase();
   busca(1);
 }
 
-function buscaEndereco(){
+function buscaEndereco() {
   filter = document.getElementById("dadoEndereco").value.toUpperCase();
   busca(2);
 }
 
-function buscaSituacao(){
+function buscaSituacao() {
   filter = document.getElementById("dadoSituacao").value.toUpperCase();
   busca(3);
+}
+
+//--------------> functions for biblioteca <---------------------
+
+function buscaCodigoBiblioteca() {
+  filter = document.getElementById("dadoCodigoBiblioteca").value.toUpperCase();
+  busca(0);
+}
+
+function buscaNomeBiblioteca() {
+  filter = document.getElementById("dadoNomeBiblioteca").value.toUpperCase();
+  busca(1);
+}
+
+function buscaEnderecoBiblioteca() {
+  filter = document.getElementById("dadoEnderecoBiblioteca").value.toUpperCase();
+  busca(2);
 }

@@ -55,30 +55,35 @@
             <h1>
                 <i class="fa fa-building" aria-hidden="true"></i> Bibliotecas</h1>
         </div>
+      
+      <table class="table table-inverse" id="myTable">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nome</th>
+                <th>Endereço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
+            <tr>
+                <td>1</td>
+                <td>Biblioteca Municipal de Canoas</td>
+                <td>XV de Janeiro, 270</td>
+            </tr>
 
-        <table class="table table-inverse">
-            <thead>
-                <tr>
-                    <th>Código</th>
-                    <th>Nome</th>
-                    <th>Endereço</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
-                <tr>
-                    <td>1</td>
-                    <td>Biblioteca Municipal de Canoas</td>
-                    <td>XV de Janeiro, 270</td>
-                </tr>
-            </tbody>
-        </table>
-
+            <tr>
+                <td>2</td>
+                <td>Biblioteca Municipal de Porto Alegre</td>
+                <td>XV, 270</td>
+            </tr>
+        </tbody>
+    </table>
         <h2>
             <i class="fa fa-cog" aria-hidden="true"></i> Gerenciar Bibliotecas</h2>
 
         <form>
-            <table class="table">
+            <table class="table" id="myTable">
                 <tbody>
                     <tr>
                         <th>Código</th>
@@ -87,13 +92,13 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" class="form-control" name="altCodigo" placeholder="CODIGO" required>
+                            <input type="search" id="dadoCodigoBiblioteca" onkeyup="buscaCodigoBiblioteca()" class="form-control" name="altCodigo" placeholder="CODIGO" required>
                         </td>
                         <td>
-                            <input type="text" class="form-control" name="altNome" placeholder="NOME">
+                            <input type="search" id="dadoNomeBiblioteca" onkeyup="buscaNomeBiblioteca()" class="form-control" name="altNome" placeholder="NOME">
                         </td>
                         <td>
-                            <input type="text" class="form-control" name="altEndereco" placeholder="ENDERECO">
+                            <input type="search" id="dadoEnderecoBiblioteca" onkeyup="buscaEnderecoBiblioteca()" class="form-control" name="altEndereco" placeholder="ENDERECO">
                         </td>
                     </tr>
                 </tbody>
@@ -101,7 +106,6 @@
             <div class="container margin-fix">
                 <button type="button" class="btn btn-primary btn-xs">Inserir</button>
                 <button type="button" class="btn btn-primary btn-xs">Alterar</button>
-
             </div>
         </form>
     </div>
@@ -110,6 +114,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./Style/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Include custom JS for searchbox -->
+    <script src="./js/custom.js"></script>
 
     <footer class="py-5 bg-dark">
         <div class="container">
