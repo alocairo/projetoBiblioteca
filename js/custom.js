@@ -135,3 +135,15 @@ function buscaSituacaoLivro() {
   filter = document.getElementById("dadoSituacaoLivro").value.toUpperCase();
   busca(5);
 }
+
+//-----------------> Functions for Usuarios <------------------------------
+
+function buscaCodigoUsuario() {
+  filter = document.getElementById("dadoCodigoUsuario").value.toUpperCase();
+  busca(0);
+}
+
+function buscaLoginUsuario() {
+  filter = document.getElementById("dadoLoginUsuario").value.toUpperCase();
+  busca(1);
+}
