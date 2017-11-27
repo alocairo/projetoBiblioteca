@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BIBLIOTECA - Livros</title>
+    <meta charset="ISO-8859-1">
+
+    <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--    <link href="/css/shop-homepage.css" rel="stylesheet" type="text/css">-->
+
+    <link href="./img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <style>
+        body {
+            padding-top: 80px;
+            word-wrap: break-word;
+        }
+
+        .margin-fix {
+            margin-bottom: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="http://localhost:8080/">BIBLIOTECA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="page-header text-center">
+            <h1>
+                <i class="fa fa-book" aria-hidden="true"></i> Livros</h1>
+        </div>
+
+        <table class="table table-inverse" id="myTable">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Título</th>
+                    <th>Editora</th>
+                    <th>Valor</th>
+                    <th>Categoria</th>
+                    <th>Biblioteca</th>
+                    <th>Situação</th>
+                    <th>Próxima Disponibilidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
+                <tr>
+                    <td>100</td>
+                    <td>O Senhor dos Anéis</td>
+                    <td>XYZ</td>
+                    <td>75,00</td>
+                    <td>25</td>
+                    <td>Biblioteca Municipal de Canoas</td>
+                    <td>Disponível</td>
+                </tr>
+
+                <tr>
+                    <td>200</td>
+                    <td>Harry Potter</td>
+                    <td>XYZ</td>
+                    <td>35,00</td>
+                    <td>25</td>
+                    <td>Biblioteca Municipal de Canoas</td>
+                    <td>Disponível</td>
+                </tr>
+
+                <tr>
+                    <td>300</td>
+                    <td>O Cortiço</td>
+                    <td>ABC</td>
+                    <td>50,00</td>
+                    <td>45</td>
+                    <td>Biblioteca Municipal de Canoas</td>
+                    <td>Disponível</td>
+                </tr>
+
+                <tr>
+                    <td>400</td>
+                    <td>Aprenda Química</td>
+                    <td>DEF</td>
+                    <td>70,00</td>
+                    <td>55</td>
+                    <td>Biblioteca Municipal de Canoas</td>
+                    <td>Disponível</td>
+                </tr>
+
+                <tr>
+                    <td>500</td>
+                    <td>O Outro Lado da Meia Noite</td>
+                    <td>FGH</td>
+                    <td>80,00</td>
+                    <td>35</td>
+                    <td>Biblioteca Municipal de Canoas</td>
+                    <td>Indisponível</td>
+                    <td>
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i> 10/12/17</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Livros</h2>
+
+        <form>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>CÓDIGO</th>
+                        <th>TÍTULO</th>
+                        <th>EDITORA</th>
+                        <th>VALOR</th>
+                        <th>CATEGORIA</th>
+                        <th>BIBLIOTECA</th>
+                        <th>SITUAÇÃO</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="altCodigoLivro" type="search" id="dadoCodigoLivro" onkeyup="buscaCodigoLivro()" class="form-control" placeholder="CODIGO">
+                        </td>
+                        <td>
+                            <input name="altTituloLivro" type="search" id="dadoTituloLivro" onkeyup="buscaTituloLivro()" class="form-control" placeholder="TITULO">
+                        </td>
+                        <td>
+                            <input name="altEditoraLivro" type="search" id="dadoEditoraLivro" onkeyup="buscaEditoraLivro()" class="form-control" placeholder="EDITORA">
+                        </td>
+                        <td>
+                            <input name="altValorLivro" type="search" id="dadoValorLivro" onkeyup="buscaValorLivro()" class="form-control" placeholder="VALOR">
+                        </td>
+                        <td>
+                            <select class="form-control" id="dadoCategoriaLivro" onchange="buscaCategoriaLivro()">
+                                <option value="" disabled selected>CATEGORIA</option>
+                                <option value="Pegar do Banco 01">Pegar do banco 01</option>
+                                <option value="Pegar do Banco 02">Pegar do banco 02</option>
+                                <option value="">Limpa Filtro</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="form-control" id="dadoBibliotecaLivro" onchange="buscaBibliotecaLivro()">
+                                <option value="" disabled selected>BIBLIOTECA</option>
+                                <option value="Pegar do Banco 01">Pegar do banco 01</option>
+                                <option value="Pegar do Banco 02">Pegar do banco 02</option>
+                                <option value="">Limpa Filtro</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="form-control" id="dadoSituacaoLivro" onchange="buscaSituacaoLivro()">
+                                <option value="" disabled selected>SITUAÇÃO</option>
+                                <option value="Pegar do Banco 01">Pegar do banco 01</option>
+                                <option value="Pegar do Banco 02">Pegar do banco 02</option>
+                                <option value="">Limpa Filtro</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="container margin-fix">
+                <button type="button" class="btn btn-primary btn-xs">Inserir</button>
+                <button type="button" class="btn btn-primary btn-xs">Alterar</button>
+
+            </div>
+        </form>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./Style/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Include custom JS for searchbox -->
+    <script src="./js/custom.js"></script>
+
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center">
+                <a href="https://github.com/AdrianoCh">
+                    <i class="fa fa-github-alt" aria-hidden="true"></i> AdrianoCh</a>
+            </p>
+            <p class="m-0 text-center">
+                <a href="https://github.com/alocairo">
+                    <i class="fa fa-github-alt" aria-hidden="true"></i> alocairo</a>
+            </p>
+            <p class="m-0 text-center text-white">
+                <a href="https://github.com/AdrianoCh/projetoBiblioteca">Project Avaliable Here
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                </a>
+            </p>
+
+        </div>
+    </footer>
+</body>
+
+</html>

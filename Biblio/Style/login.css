@@ -1,0 +1,68 @@
+/* fonte primaria*/
+
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
+
+/* fonte secundaria*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body {
+    background: url("../img/login-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    background-color: #1e85c1;
+    font-size: 20pt;
+}
+
+h1 {
+    padding: 0.5%;
+}
+
+#login-box {
+    background-color: #64b5f6;
+    box-shadow: 10px 10px 50px;
+    text-align: center;
+    padding: 0% 0% 1% 0%;
+    margin: 10%;
+    display: block;
+    border-radius: 2% 2% 2% 2%;
+}
+
+
+.sep-input {
+    padding: 0.5%;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15pt;
+}
+
+input {
+    border-radius: 5% 10% 15%;
+}
+
+::placeholder {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#botao {
+    background-color: #d32f2f;
+    color: white;
+    padding: 0.8%;
+    position: relative;
+    left: 103px;
+    margin: 2%;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    margin: 5%;
+}
