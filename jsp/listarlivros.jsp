@@ -35,7 +35,7 @@
                         <div class="container">
 
                             <!-- import the navbar -->
-                            <jsp: include page="nav.html" />
+                            <%@include file="nav.html" %>
 
                             <div class="page-header text-center">
                                 <h1>
@@ -173,7 +173,7 @@
                         <script src="./js/custom.js"></script>
 
                         <!-- import footer -->
-                        <jsp: include page="footer.html" />
+                        <%@include file="nav.html" %>
                     </body>
 
                     </html>
