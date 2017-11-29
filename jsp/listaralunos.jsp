@@ -128,24 +128,8 @@
                 <!-- Include custom JS for searchbox -->
                 <script src="./js/custom.js"></script>
 
-                <footer class="py-5 bg-dark">
-                    <div class="container">
-                        <p class="m-0 text-center">
-                            <a href="https://github.com/AdrianoCh">
-                                <i class="fa fa-github-alt" aria-hidden="true"></i> AdrianoCh</a>
-                        </p>
-                        <p class="m-0 text-center">
-                            <a href="https://github.com/alocairo">
-                                <i class="fa fa-github-alt" aria-hidden="true"></i> alocairo</a>
-                        </p>
-                        <p class="m-0 text-center text-white">
-                            <a href="https://github.com/AdrianoCh/projetoBiblioteca">Project Avaliable Here
-                                <i class="fa fa-github-square" aria-hidden="true"></i>
-                            </a>
-                        </p>
-
-                    </div>
-                </footer>
+                <!-- import footer -->
+                <jsp: include page="footer.html" />
             </body>
 
             </html>
