@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>BIBLIOTECA - Funcionários</title>
+    <title>BIBLIOTECA - Categoria</title>
 
     <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -53,92 +53,56 @@
 
         <div class="page-header text-center">
             <h1>
-                <i class="fa fa-id-card" aria-hidden="true"></i> Funcionário</h1>
+                <i class="fa fa-tag" aria-hidden="true"></i> Categorias</h1>
         </div>
 
         <table class="table table-inverse" id="myTable">
             <thead>
                 <tr>
                     <th>Codigo</th>
-                    <th>Nome</th>
-                    <th>Endereço</th>
-                    <th>Telefone</th>
-                    <th>Salário</th>
-                    <th>Biblioteca</th>
+                    <th>Descrição</th>
                 </tr>
             </thead>
             <tbody>
                 <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
                 <tr>
-                    <td>10</td>
-                    <td>Marta</td>
-                    <td>Silva So, 350</td>
-                    <td>5181069688</td>
-                    <td>1500,00</td>
-                    <td>Biblioteca Municipal Canoas</td>
+                    <td>25</td>
+                    <td>Ficação</td>
                 </tr>
 
                 <tr>
-                    <td>20</td>
-                    <td>Paula</td>
-                    <td>Dom Pedro II, 200</td>
-                    <td>5199874546</td>
-                    <td>4500,00</td>
-                    <td>Biblioteca Municipal Canoas</td>
+                    <td>35</td>
+                    <td>Romance</td>
                 </tr>
 
                 <tr>
-                    <td>30</td>
-                    <td>Carlos</td>
-                    <td>Ipiranga, 700</td>
-                    <td>5181069545</td>
-                    <td>3000,00</td>
-                    <td>Biblioteca Municipal Canoas</td>
+                    <td>45</td>
+                    <td>Literatura</td>
                 </tr>
 
                 <tr>
-                    <td>40</td>
-                    <td>Jonas</td>
-                    <td>Protasio Alves, 450</td>
-                    <td>5187874452</td>
-                    <td>4500,00</td>
-                    <td>Biblioteca Municipal Canoas</td>
+                    <td>55</td>
+                    <td>Ciêntifico</td>
                 </tr>
             </tbody>
         </table>
-
         <h2>
-            <i class="fa fa-users" aria-hidden="true"></i> Gerenciar Funcionario</h2>
+            <i class="fa fa-server" aria-hidden="true"></i> Gerenciar Categorias</h2>
 
         <form>
-            <table class="table">
+            <table class="table" id="myTable">
                 <tbody>
                     <tr>
-                        <th>Codigo</th>
-                        <th>Nome</th>
-                        <th>Endereço</th>
-                        <th>Telefone</th>
-                        <th>Salário</th>
-                        <th>Biblioteca</th>
+                        <th>Código</th>
+                        <th>Descrição</th>
                     </tr>
                     <tr>
                         <td>
-                            <input name="altCodigoFuncionario" type="search" id="dadoCodigoFuncionario" onkeyup="buscaCodigoFuncionario()" class="form-control" placeholder="CODIGO">
+                            <input type="search" id="dadoCodigoCategoria" onkeyup="buscaCodigoCategoria()" class="form-control" name="altCodigo" placeholder="CODIGO"
+                                required>
                         </td>
                         <td>
-                            <input name="altNomeFuncionario" type="search" id="dadoNomeFuncionario" onkeyup="buscaNomeFuncionario()" class="form-control" placeholder="NOME">
-                        </td>
-                        <td>
-                            <input name="altEnderecoFuncionario" type="search" id="dadoEnderecoFuncionario" onkeyup="buscaEnderecoFuncionario()" class="form-control" placeholder="ENDERECO">
-                        </td>
-                        <td>
-                            <input name="altTelefoneFuncionario" type="search" id="dadoTelefoneFuncionario" onkeyup="buscaTelefoneFuncionario()" class="form-control" placeholder="TELEFONE">
-                        </td>
-                        <td>
-                            <input name="altSalarioFuncionario" type="search" id="dadoSalarioFuncionario" onkeyup="buscaSalarioFuncionario()" class="form-control" placeholder="SALARIO">
-                        </td>
-                        <td>
-                            <input name="altBibliotecaFuncionario" type="search" id="dadoBibliotecaFuncionario" onkeyup="buscaBibliotecaFuncionario()" class="form-control" placeholder="BIBLIOTECA">
+                            <input type="search" id="dadoDescricaoCategoria" onkeyup="buscaDescricaoCategoria()" class="form-control" name="altDescricao" placeholder="DESCRICAO">
                         </td>
                     </tr>
                 </tbody>
@@ -146,8 +110,6 @@
             <div class="container margin-fix">
                 <button type="button" class="btn btn-primary btn-xs">Inserir</button>
                 <button type="button" class="btn btn-primary btn-xs">Alterar</button>
-                <button type="button" class="btn btn-primary btn-xs">Desativar</button>
-
             </div>
         </form>
     </div>

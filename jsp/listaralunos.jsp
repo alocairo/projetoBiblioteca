@@ -33,7 +33,7 @@
                 <div class="container">
 
                     <!-- import the navbar -->
-                    <%@include file="nav.html" %>
+                    <jsp:directive.include file = "nav.html" />
 
                     <div class="page-header text-center">
                         <h1>
@@ -45,8 +45,8 @@
                             <tr>
                                 <th>Matricula</th>
                                 <th>Nome</th>
-                                <th>Endereï¿½o</th>
-                                <th>Situaï¿½ï¿½o</th>
+                                <th>Endereço</th>
+                                <th>Situação</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -87,8 +87,8 @@
                                 <tr>
                                     <th>MATRICULA</th>
                                     <th>NOME</th>
-                                    <th>ENDEREï¿½O</th>
-                                    <th>SITUAï¿½ï¿½O</th>
+                                    <th>ENDEREÇO</th>
+                                    <th>SITUAÇÃO</th>
                                 </tr>
                                 <tr>
                                     <td>
@@ -102,7 +102,7 @@
                                     </td>
                                     <td>
                                         <select name="altSituacao" class="form-control" id="dadoSituacao" onchange="buscaSituacao()">
-                                            <option value="" disabled selected>SITUAï¿½ï¿½O</option>
+                                            <option value="" disabled selected>SITUAÇÃO</option>
                                             <option value="Ativo">Ativo</option>
                                             <option value="Desabilitado">Desabilitado</option>
                                             <option value="">Limpa Filtro</option>
@@ -129,7 +129,7 @@
                 <script src="./js/custom.js"></script>
 
                 <!-- import footer -->
-                <%@include file="footer.html" %>
+                <jsp:directive.include file = "footer.html" />
             </body>
 
             </html>
