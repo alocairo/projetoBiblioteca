@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ page import ="java.util.List" %>
-        <%@ page import ="biblio.entidades.Categoria" %>
-            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-            <html>
+<%@ page import ="java.util.List" %>
+<%@ page import ="biblio.entidades.Categoria" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ <html>
 
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -33,7 +33,7 @@
                 <div class="container">
 
                     <!-- import the navbar -->
-                    <%@include file="nav.html" %>
+                   <jsp:directive.include file = "nav.html" />
 
                     <div class="page-header text-center">
                         <h1>
@@ -44,7 +44,7 @@
                         <thead>
                             <tr>
                                 <th>Codigo</th>
-                                <th>Descriï¿½ï¿½o</th>
+                                <th>Descrição</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -73,8 +73,8 @@
                         <table class="table" id="myTable">
                             <tbody>
                                 <tr>
-                                    <th>Cï¿½digo</th>
-                                    <th>Descriï¿½ï¿½o</th>
+                                    <th>Código</th>
+                                    <th>Descrição</th>
                                 </tr>
                                 <tr>
                                     <td>
@@ -102,7 +102,7 @@
                 <script src="./js/custom.js"></script>
 
                 <!-- import footer -->
-                <%@include file="footer.html" %>
+                <jsp:directive.include file = "footer.html" />
             </body>
 
             </html>

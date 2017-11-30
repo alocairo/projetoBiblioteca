@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>BIBLIOTECA - Alunos</title>
+    <title>BIBLIOTECA - Usuarios</title>
 
     <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -53,54 +53,57 @@
 
         <div class="page-header text-center">
             <h1>
-                <i class="fa fa-building" aria-hidden="true"></i> Bibliotecas</h1>
+                <i class="fa fa-id-card" aria-hidden="true"></i> Usuarios</h1>
         </div>
 
         <table class="table table-inverse" id="myTable">
             <thead>
                 <tr>
                     <th>Codigo</th>
-                    <th>Nome</th>
-                    <th>Endereço</th>
+                    <th>Login</th>
                 </tr>
             </thead>
             <tbody>
                 <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
+                <!-- Pensar e vincular usuario com funcionario, ou alun0 -->
                 <tr>
-                    <td>1</td>
-                    <td>Biblioteca Municipal de Canoas</td>
-                    <td>XV de Janeiro, 270</td>
+                    <td>300</td>
+                    <td>MariaP</td>
                 </tr>
 
                 <tr>
-                    <td>2</td>
-                    <td>Biblioteca Municipal de Porto Alegre</td>
-                    <td>XV, 270</td>
+                    <td>310</td>
+                    <td>MauroE</td>
+                </tr>
+
+                <tr>
+                    <td>320</td>
+                    <td>JoaoG</td>
+                </tr>
+
+                <tr>
+                    <td>340</td>
+                    <td>PauloG</td>
                 </tr>
             </tbody>
         </table>
+
         <h2>
-            <i class="fa fa-cog" aria-hidden="true"></i> Gerenciar Bibliotecas</h2>
+            <i class="fa fa-users" aria-hidden="true"></i> Gerenciar Usuarios</h2>
 
         <form>
-            <table class="table" id="myTable">
+            <table class="table">
                 <tbody>
                     <tr>
                         <th>Código</th>
-                        <th>Nome</th>
-                        <th>Endereço</th>
+                        <th>Login</th>
                     </tr>
                     <tr>
                         <td>
-                            <input type="search" id="dadoCodigoBiblioteca" onkeyup="buscaCodigoBiblioteca()" class="form-control" name="altCodigo" placeholder="CODIGO"
-                                required>
+                            <input name="altCodigo" type="search" id="dadoCodigoUsuario" onkeyup="buscaCodigoUsuario()" class="form-control" placeholder="CODIGO">
                         </td>
                         <td>
-                            <input type="search" id="dadoNomeBiblioteca" onkeyup="buscaNomeBiblioteca()" class="form-control" name="altNome" placeholder="NOME">
-                        </td>
-                        <td>
-                            <input type="search" id="dadoEnderecoBiblioteca" onkeyup="buscaEnderecoBiblioteca()" class="form-control" name="altEndereco"
-                                placeholder="ENDERECO">
+                            <input name="altLogin" type="search" id="dadoLoginUsuario" onkeyup="buscaLoginUsuario()" class="form-control" placeholder="NOME">
                         </td>
                     </tr>
                 </tbody>
@@ -108,6 +111,8 @@
             <div class="container margin-fix">
                 <button type="button" class="btn btn-primary btn-xs">Inserir</button>
                 <button type="button" class="btn btn-primary btn-xs">Alterar</button>
+                <button type="button" class="btn btn-primary btn-xs">Desativar</button>
+
             </div>
         </form>
     </div>

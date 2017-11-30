@@ -7,7 +7,7 @@
 
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-                <title>BIBLIOTECA - Funcionï¿½rios</title>
+                <title>BIBLIOTECA - Funcionários</title>
 
                 <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
                 <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
                 <div class="container">
 
                     <!-- import the navbar -->
-                    <%@include file="nav.html" %>
+                    <jsp:directive.include file = "nav.html" />
 
                     <div class="page-header text-center">
                         <h1>
@@ -43,11 +43,11 @@
                     <table class="table table-inverse" id="myTable">
                         <thead>
                             <tr>
-                                <th>Codigo</th>
+                                <th>Código</th>
                                 <th>Nome</th>
-                                <th>Endereï¿½o</th>
+                                <th>Endereço</th>
                                 <th>Telefone</th>
-                                <th>Salï¿½rio</th>
+                                <th>Salário</th>
                                 <th>Biblioteca</th>
                             </tr>
                         </thead>
@@ -88,11 +88,11 @@
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <th>Codigo</th>
+                                    <th>Código</th>
                                     <th>Nome</th>
-                                    <th>Endereï¿½o</th>
+                                    <th>Endereço</th>
                                     <th>Telefone</th>
-                                    <th>Salï¿½rio</th>
+                                    <th>Salário</th>
                                     <th>Biblioteca</th>
                                 </tr>
                                 <tr>
@@ -141,7 +141,7 @@
                 <script src="./js/custom.js"></script>
 
                 <!-- import footer -->
-                <%@include file="footer.html" %>
+                <jsp:directive.include file = "footer.html" />
             </body>
 
             </html>

@@ -33,7 +33,7 @@
                 <div class="container">
 
                     <!-- import the navbar -->
-                    <%@include file="nav.html" %>
+                    <jsp:directive.include file = "nav.html" />
 
                     <div class="page-header text-center">
                         <h1>
@@ -43,13 +43,13 @@
                     <table class="table table-inverse" id="myTable">
                         <thead>
                             <tr>
-                                <th>Codigo</th>
+                                <th>Código</th>
                                 <th>Nome</th>
-                                <th>Endereï¿½o</th>
+                                <th>Endereço</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <!--       Apenas primeiro tr deve ser mantido, os outros serao dinï¿½micos -->
+                            <!--       Apenas primeiro tr deve ser mantido, os outros serao dinamicos -->
                             <%	List<Biblioteca> lista = (List<Biblioteca>) request.getAttribute("lista");
                 
                 	for (Biblioteca bib: lista) {
@@ -75,9 +75,9 @@
                         <table class="table" id="myTable">
                             <tbody>
                                 <tr>
-                                    <th>Cï¿½digo</th>
+                                    <th>Có]digo</th>
                                     <th>Nome</th>
-                                    <th>Endereï¿½o</th>
+                                    <th>Endereço</th>
                                 </tr>
                                 <tr>
                                     <td>
@@ -108,7 +108,7 @@
                 <script src="./js/custom.js"></script>
 
                 <!-- import footer -->
-                <%@include file="footer.html" %>
+                <jsp:directive.include file = "footer.html" />
             </body>
 
             </html>

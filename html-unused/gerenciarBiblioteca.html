@@ -53,79 +53,54 @@
 
         <div class="page-header text-center">
             <h1>
-                <i class="fa fa-id-card" aria-hidden="true"></i> Alunos</h1>
+                <i class="fa fa-building" aria-hidden="true"></i> Bibliotecas</h1>
         </div>
 
         <table class="table table-inverse" id="myTable">
             <thead>
                 <tr>
-                    <th>Matricula</th>
+                    <th>Codigo</th>
                     <th>Nome</th>
                     <th>Endereço</th>
-                    <th>Situação</th>
                 </tr>
             </thead>
             <tbody>
                 <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
                 <tr>
-                    <td>300</td>
-                    <td>Maria Paula</td>
-                    <td>Assis Brasil, 110</td>
-                    <td>Ativo</td>
+                    <td>1</td>
+                    <td>Biblioteca Municipal de Canoas</td>
+                    <td>XV de Janeiro, 270</td>
                 </tr>
 
                 <tr>
-                    <td>310</td>
-                    <td>Mauro Eduardo</td>
-                    <td>Carlos Gomes, 150</td>
-                    <td>Ativo</td>
-                </tr>
-
-                <tr>
-                    <td>320</td>
-                    <td>Joao Gilberto</td>
-                    <td>Andradas, 1200</td>
-                    <td>Desabilitado</td>
-                </tr>
-
-                <tr>
-                    <td>340</td>
-                    <td>Paulo Gomes</td>
-                    <td>Jose do Patrocinio, 500</td>
-                    <td>Ativo</td>
+                    <td>2</td>
+                    <td>Biblioteca Municipal de Porto Alegre</td>
+                    <td>XV, 270</td>
                 </tr>
             </tbody>
         </table>
-
         <h2>
-            <i class="fa fa-users" aria-hidden="true"></i> Gerenciar Alunos</h2>
+            <i class="fa fa-cog" aria-hidden="true"></i> Gerenciar Bibliotecas</h2>
 
         <form>
-            <table class="table">
+            <table class="table" id="myTable">
                 <tbody>
                     <tr>
-                        <th>MATRICULA</th>
-                        <th>NOME</th>
-                        <th>ENDEREÇO</th>
-                        <th>SITUAÇÃO</th>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Endereço</th>
                     </tr>
                     <tr>
                         <td>
-                            <input name="altMatricula" type="search" id="dadoMatricula" onkeyup="buscaMatricula()" class="form-control" placeholder="MATRICULA">
+                            <input type="search" id="dadoCodigoBiblioteca" onkeyup="buscaCodigoBiblioteca()" class="form-control" name="altCodigo" placeholder="CODIGO"
+                                required>
                         </td>
                         <td>
-                            <input name="altNome" type="search" id="dadoNome" onkeyup="buscaNome()" class="form-control" placeholder="NOME">
+                            <input type="search" id="dadoNomeBiblioteca" onkeyup="buscaNomeBiblioteca()" class="form-control" name="altNome" placeholder="NOME">
                         </td>
                         <td>
-                            <input name="altEndereco" type="search" id="dadoEndereco" onkeyup="buscaEndereco()" class="form-control" placeholder="NOME">
-                        </td>
-                        <td>
-                            <select class="form-control" id="dadoSituacao" onchange="buscaSituacao()">
-                                <option value="" disabled selected>SITUAÇÃO</option>
-                                <option value="Ativo">Ativo</option>
-                                <option value="Desabilitado">Desabilitado</option>
-                                <option value="">Limpa Filtro</option>
-                            </select>
+                            <input type="search" id="dadoEnderecoBiblioteca" onkeyup="buscaEnderecoBiblioteca()" class="form-control" name="altEndereco"
+                                placeholder="ENDERECO">
                         </td>
                     </tr>
                 </tbody>
@@ -133,8 +108,6 @@
             <div class="container margin-fix">
                 <button type="button" class="btn btn-primary btn-xs">Inserir</button>
                 <button type="button" class="btn btn-primary btn-xs">Alterar</button>
-                <button type="button" class="btn btn-primary btn-xs">Desativar</button>
-
             </div>
         </form>
     </div>
