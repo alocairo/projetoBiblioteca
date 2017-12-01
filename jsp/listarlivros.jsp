@@ -26,6 +26,12 @@
                             .margin-fix {
                                 margin-bottom: 20px;
                             }
+                            footer {
+            margin: auto;
+            width: 100%;
+            bottom: 0;
+            position: fixed;
+        }
                         </style>
 
 
