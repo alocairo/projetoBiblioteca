@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>BIBLIOTECA - Usuarios</title>
+    <title>BIBLIOTECA - Livros com alunos Ativos / Inativos</title>
 
     <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -53,68 +53,29 @@
 
         <div class="page-header text-center">
             <h1>
-                <i class="fa fa-id-card" aria-hidden="true"></i> Usuarios</h1>
+                <i class="fa fa-tag" aria-hidden="true"></i> Livros com usuários Ativos / Inativos</h1>
         </div>
 
         <table class="table table-inverse" id="myTable">
             <thead>
                 <tr>
-                    <th>Codigo</th>
-                    <th>Login</th>
+                    <th>Livros com Usuários Ativos</th>
+                    <th>Livros com Usuários Inativos</th>
                 </tr>
             </thead>
             <tbody>
                 <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
-                <!-- Pensar e vincular usuario com funcionario, ou alun0 -->
                 <tr>
-                    <td>300</td>
-                    <td>MariaP</td>
+                    <td>25</td>
+                    <td>35</td>
                 </tr>
 
-                <tr>
-                    <td>310</td>
-                    <td>MauroE</td>
-                </tr>
-
-                <tr>
-                    <td>320</td>
-                    <td>JoaoG</td>
-                </tr>
-
-                <tr>
-                    <td>340</td>
-                    <td>PauloG</td>
-                </tr>
             </tbody>
         </table>
+        <div class="container margin-fix">
+            <button name="impressao" name="imprimir" value="Imprimir" onclick="window.print()" class="btn btn-primary btn-xs">Imprimir</button>
+        </div>
 
-        <h2>
-            <i class="fa fa-users" aria-hidden="true"></i> Gerenciar Usuarios</h2>
-
-        <form>
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <th>Código</th>
-                        <th>Login</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input name="altCodigo" type="search" id="dadoCodigoUsuario" onkeyup="buscaCodigoUsuario()" class="form-control" placeholder="CODIGO">
-                        </td>
-                        <td>
-                            <input name="altLogin" type="search" id="dadoLoginUsuario" onkeyup="buscaLoginUsuario()" class="form-control" placeholder="NOME">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="container margin-fix">
-                <button type="button" class="btn btn-primary btn-xs">Inserir</button>
-                <button type="button" class="btn btn-primary btn-xs">Alterar</button>
-                <button type="button" class="btn btn-primary btn-xs">Desativar</button>
-                <button name="impressao" name="imprimir" value="Imprimir" onclick="window.print()" class="btn btn-primary btn-xs">Imprimir</button>
-            </div>
-        </form>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
