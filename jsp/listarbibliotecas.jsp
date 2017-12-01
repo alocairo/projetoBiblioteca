@@ -33,7 +33,7 @@
                 <div class="container">
 
                     <!-- import the navbar -->
-                    <jsp:directive.include file = "nav.html" />
+                    <jsp:directive.include file="nav.html" />
 
                     <div class="page-header text-center">
                         <h1>
@@ -43,9 +43,9 @@
                     <table class="table table-inverse" id="myTable">
                         <thead>
                             <tr>
-                                <th>Código</th>
+                                <th>Cï¿½digo</th>
                                 <th>Nome</th>
-                                <th>Endereço</th>
+                                <th>Endereï¿½o</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -75,9 +75,9 @@
                         <table class="table" id="myTable">
                             <tbody>
                                 <tr>
-                                    <th>Có]digo</th>
+                                    <th>Cï¿½]digo</th>
                                     <th>Nome</th>
-                                    <th>Endereço</th>
+                                    <th>Endereï¿½o</th>
                                 </tr>
                                 <tr>
                                     <td>
@@ -96,6 +96,7 @@
                         <div class="container margin-fix">
                             <button name="condicao" value="inserir" type="submit" class="btn btn-primary btn-xs">Inserir</button>
                             <button name="condicao" value="alterar" type="submit" class="btn btn-primary btn-xs">Alterar</button>
+                            <button name="impressao" name="imprimir" value="Imprimir" onclick="window.print()" class="btn btn-primary btn-xs">Imprimir</button>
                         </div>
                     </form>
                 </div>
@@ -108,7 +109,7 @@
                 <script src="./js/custom.js"></script>
 
                 <!-- import footer -->
-                <jsp:directive.include file = "footer.html" />
+                <jsp:directive.include file="footer.html" />
             </body>
 
             </html>

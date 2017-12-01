@@ -35,7 +35,7 @@
                         <div class="container">
 
                             <!-- import the navbar -->
-                            <jsp:directive.include file = "nav.html" />
+                            <jsp:directive.include file="nav.html" />
 
                             <div class="page-header text-center">
                                 <h1>
@@ -45,14 +45,14 @@
                             <table class="table table-inverse" id="myTable">
                                 <thead>
                                     <tr>
-                                        <th>Código</th>
-                                        <th>Título</th>
+                                        <th>Cï¿½digo</th>
+                                        <th>Tï¿½tulo</th>
                                         <th>Editora</th>
                                         <th>Valor</th>
                                         <th>Categoria</th>
                                         <th>Biblioteca</th>
-                                        <th>Situação</th>
-                                        <th>Próxima Disponibilidade</th>
+                                        <th>Situaï¿½ï¿½o</th>
+                                        <th>Prï¿½xima Disponibilidade</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -96,13 +96,13 @@
                                 <table class="table">
                                     <tbody>
                                         <tr>
-                                            <th>CÓDIGO</th>
-                                            <th>TÍTULO</th>
+                                            <th>Cï¿½DIGO</th>
+                                            <th>Tï¿½TULO</th>
                                             <th>EDITORA</th>
                                             <th>VALOR</th>
                                             <th>CATEGORIA</th>
                                             <th>BIBLIOTECA</th>
-                                            <th>SITUAÇÃO</th>
+                                            <th>SITUAï¿½ï¿½O</th>
                                         </tr>
                                         <tr>
                                             <td>
@@ -148,7 +148,7 @@
                                             </td>
                                             <td>
                                                 <select name="altSituacao" class="form-control" id="dadoSituacaoLivro" onchange="buscaSituacaoLivro()">
-                                                    <option value="" disabled selected>SITUAÇÃO</option>
+                                                    <option value="" disabled selected>SITUAï¿½ï¿½O</option>
                                                     <option value="Livre">Livre</option>
                                                     <option value="Indisponivel">Indisponivel</option>
                                                     <option value="">Limpa Filtro</option>
@@ -160,6 +160,7 @@
                                 <div class="container margin-fix">
                                     <button name="condicao" value="inserir" type="submit" class="btn btn-primary btn-xs">Inserir</button>
                                     <button name="condicao" value="alterar" type="submit" class="btn btn-primary btn-xs">Alterar</button>
+                                    <button name="impressao" name="imprimir" value="Imprimir" onclick="window.print()" class="btn btn-primary btn-xs">Imprimir</button>
 
                                 </div>
                             </form>
@@ -173,7 +174,7 @@
                         <script src="./js/custom.js"></script>
 
                         <!-- import footer -->
-                        <jsp:directive.include file = "footer.html" />
+                        <jsp:directive.include file="footer.html" />
                     </body>
 
                     </html>

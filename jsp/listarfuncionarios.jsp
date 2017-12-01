@@ -7,7 +7,7 @@
 
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-                <title>BIBLIOTECA - Funcionários</title>
+                <title>BIBLIOTECA - Funcionï¿½rios</title>
 
                 <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
                 <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
                 <div class="container">
 
                     <!-- import the navbar -->
-                    <jsp:directive.include file = "nav.html" />
+                    <jsp:directive.include file="nav.html" />
 
                     <div class="page-header text-center">
                         <h1>
@@ -43,11 +43,11 @@
                     <table class="table table-inverse" id="myTable">
                         <thead>
                             <tr>
-                                <th>Código</th>
+                                <th>Cï¿½digo</th>
                                 <th>Nome</th>
-                                <th>Endereço</th>
+                                <th>Endereï¿½o</th>
                                 <th>Telefone</th>
-                                <th>Salário</th>
+                                <th>Salï¿½rio</th>
                                 <th>Biblioteca</th>
                             </tr>
                         </thead>
@@ -88,11 +88,11 @@
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <th>Código</th>
+                                    <th>Cï¿½digo</th>
                                     <th>Nome</th>
-                                    <th>Endereço</th>
+                                    <th>Endereï¿½o</th>
                                     <th>Telefone</th>
-                                    <th>Salário</th>
+                                    <th>Salï¿½rio</th>
                                     <th>Biblioteca</th>
                                 </tr>
                                 <tr>
@@ -128,6 +128,7 @@
                             <button name="condicao" value="alterar" type="submit" class="btn btn-primary btn-xs">Alterar</button>
                             <% // Verificar funcao abaixo %>
                                 <button type="button" class="btn btn-primary btn-xs">Desativar</button>
+                                <button name="impressao" name="imprimir" value="Imprimir" onclick="window.print()" class="btn btn-primary btn-xs">Imprimir</button>
 
                         </div>
                     </form>
@@ -141,7 +142,7 @@
                 <script src="./js/custom.js"></script>
 
                 <!-- import footer -->
-                <jsp:directive.include file = "footer.html" />
+                <jsp:directive.include file="footer.html" />
             </body>
 
             </html>
