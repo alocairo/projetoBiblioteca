@@ -1,4 +1,4 @@
-# projetoBiblioteca Version 1.0.4 Added the following views :
+# projetoBiblioteca Version 0.1 Added the following views :
 
 <strong>Work in Progress:</strong>
 <ul>
