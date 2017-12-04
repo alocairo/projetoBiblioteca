@@ -30,7 +30,7 @@
             margin: auto;
             width: 100%;
             bottom: 0;
-            position: fixed;
+            position: relative;
         }
                         </style>
 
