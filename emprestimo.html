@@ -24,7 +24,11 @@
             margin: auto;
             width: 100%;
             bottom: 0;
+<<<<<<< HEAD
             position: fixed;
+=======
+            position: relative;
+>>>>>>> upstream/master
         }
     </style>
 
@@ -74,14 +78,22 @@
                 <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
                 <tr>
                     <td>
+<<<<<<< HEAD
                         <select class="form-control">
+=======
+                        <select class="form-control" onchange="comprovante()">
+>>>>>>> upstream/master
                             <option value="" disabled selected>LIVRO</option>
                             <option value="Pegar do Banco 01">Pegar do banco 01</option>
                             <option value="Pegar do Banco 02">Pegar do banco 02</option>
                         </select>
                     </td>
                     <td>
+<<<<<<< HEAD
                         <select class="form-control">
+=======
+                        <select class="form-control" onchange="comprovante()">
+>>>>>>> upstream/master
                             <option value="" disabled selected>Usuario</option>
                             <option value="Pegar do Banco 01">Pegar do banco 01</option>
                             <option value="Pegar do Banco 02">Pegar do banco 02</option>
@@ -92,7 +104,25 @@
             </tbody>
         </table>
         <div class="container margin-fix">
+<<<<<<< HEAD
             <button type="button" class="btn btn-primary btn-xs">Emprestar</button>
+=======
+                <div class="card col-lg-4 col-md-6 mb-4 h-100">
+                        <h3 class="card-header primary-color white-text" id="entrega"></h3>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <i class="fa fa-file-text" aria-hidden="true"></i>
+                            </h4>
+                            <p class="card-text" id="destino"></p>
+                            <p id="data"></p>
+                            <p id="devolucao"></p>
+                        </div>
+                    </div>
+
+            <button type="button" class="btn btn-primary btn-xs">Emprestar</button>
+            <button name="impressao" name="imprimir" value="Imprimir" onclick="window.print()" class="btn btn-primary btn-xs">Imprimir</button>
+
+>>>>>>> upstream/master
 
         </div>
 
@@ -104,6 +134,11 @@
     <script src="./Style/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Include custom JS for searchbox -->
     <script src="./js/custom.js"></script>
+<<<<<<< HEAD
+=======
+    <!-- include custom JS for Date -->
+    <script src="./js/comprovante.js"></script>
+>>>>>>> upstream/master
 
     <footer class="py-5 bg-dark">
         <div class="container">
