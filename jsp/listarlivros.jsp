@@ -30,7 +30,11 @@
             margin: auto;
             width: 100%;
             bottom: 0;
+<<<<<<< HEAD
+            position: fixed;
+=======
             position: relative;
+>>>>>>> upstream/master
         }
                         </style>
 
