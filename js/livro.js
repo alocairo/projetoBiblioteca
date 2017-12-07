@@ -1,4 +1,4 @@
-var filter = "Disponível".toUpperCase();
+var filter = "Livre".toUpperCase();
 function buscaDisponibilidade() {
     var table, tr, td, i, change;
     table = document.getElementById("myTable");
@@ -11,7 +11,7 @@ function buscaDisponibilidade() {
             if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
                 //tr[i].style.display = "";
                 change = tr[i].getElementsByTagName("td")[6];
-                change.innerHTML = '<a href="./emprestimo.html"><td>Disponível</td></a>';
+                change.innerHTML = '<a href="./empcontroller.do"><td>Livre</td></a>';
             }
         }
     }

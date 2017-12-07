@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>BIBLIOTECA - Emrpéstimo</title>
+    <title>BIBLIOTECA - Livros com alunos Ativos / Inativos</title>
 
     <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,13 +18,6 @@
 
         .margin-fix {
             margin-bottom: 20px;
-        }
-
-        footer {
-            margin: auto;
-            width: 100%;
-            bottom: 0;
-            position: relative;
         }
     </style>
 
@@ -60,54 +53,27 @@
 
         <div class="page-header text-center">
             <h1>
-                <i class="fa fa-handshake-o" aria-hidden="true"></i> Empréstimo</h1>
+                <i class="fa fa-tag" aria-hidden="true"></i> Livros com usuários Ativos / Inativos</h1>
         </div>
 
         <table class="table table-inverse" id="myTable">
             <thead>
                 <tr>
-                    <th>Livro</th>
-                    <th>Usuario Destino</th>
+                    <th>Livros com Usuários Ativos</th>
+                    <th>Livros com Usuários Inativos</th>
                 </tr>
             </thead>
             <tbody>
                 <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
                 <tr>
-                    <td>
-                        <select class="form-control" onchange="comprovante()">
-                            <option value="" disabled selected>LIVRO</option>
-                            <option value="Pegar do Banco 01">Pegar do banco 01</option>
-                            <option value="Pegar do Banco 02">Pegar do banco 02</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select class="form-control" onchange="comprovante()">
-                            <option value="" disabled selected>Usuario</option>
-                            <option value="Pegar do Banco 01">Pegar do banco 01</option>
-                            <option value="Pegar do Banco 02">Pegar do banco 02</option>
-                        </select>
-                    </td>
+                    <td>25</td>
+                    <td>35</td>
                 </tr>
 
             </tbody>
         </table>
         <div class="container margin-fix">
-                <div class="card col-lg-4 col-md-6 mb-4 h-100">
-                        <h3 class="card-header primary-color white-text" id="entrega"></h3>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <i class="fa fa-file-text" aria-hidden="true"></i>
-                            </h4>
-                            <p class="card-text" id="destino"></p>
-                            <p id="data"></p>
-                            <p id="devolucao"></p>
-                        </div>
-                    </div>
-
-            <button type="button" class="btn btn-primary btn-xs">Emprestar</button>
             <button name="impressao" name="imprimir" value="Imprimir" onclick="window.print()" class="btn btn-primary btn-xs">Imprimir</button>
-
-
         </div>
 
     </div>
@@ -118,8 +84,6 @@
     <script src="./Style/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Include custom JS for searchbox -->
     <script src="./js/custom.js"></script>
-    <!-- include custom JS for Date -->
-    <script src="./js/comprovante.js"></script>
 
     <footer class="py-5 bg-dark">
         <div class="container">

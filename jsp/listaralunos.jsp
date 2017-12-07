@@ -28,7 +28,11 @@
             margin: auto;
             width: 100%;
             bottom: 0;
+<<<<<<< HEAD
+            position: fixed;
+=======
             position: relative;
+>>>>>>> upstream/master
         }
                 </style>
 
@@ -51,8 +55,8 @@
                             <tr>
                                 <th>Matricula</th>
                                 <th>Nome</th>
-                                <th>Endereï¿½o</th>
-                                <th>Situaï¿½ï¿½o</th>
+                                <th>Endereço</th>
+                                <th>Situação</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -93,8 +97,8 @@
                                 <tr>
                                     <th>MATRICULA</th>
                                     <th>NOME</th>
-                                    <th>ENDEREï¿½O</th>
-                                    <th>SITUAï¿½ï¿½O</th>
+                                    <th>ENDEREÇO</th>
+                                    <th>SITUAÇÃO</th>
                                 </tr>
                                 <tr>
                                     <td>
@@ -108,8 +112,8 @@
                                     </td>
                                     <td>
                                         <select name="altSituacao" class="form-control" id="dadoSituacao" onchange="buscaSituacao()">
-                                            <option value="" disabled selected>SITUAï¿½ï¿½O</option>
-                                            <option value="Ativo">Ativo</option>
+                                            <option value="" disabled selected>SITUAÇÃO</option>
+                                            <option value="Habilitado">Habilitado</option>
                                             <option value="Desabilitado">Desabilitado</option>
                                             <option value="">Limpa Filtro</option>
                                         </select>
@@ -120,9 +124,7 @@
                         <div class="container margin-fix">
                             <button name="condicao" value="inserir" type="submit" class="btn btn-primary btn-xs">Inserir</button>
                             <button name="condicao" value="alterar" type="submit" class="btn btn-primary btn-xs">Alterar</button>
-                            <% //  Verificar se ï¿½ necessario este botï¿½o, se sim, criar funcao desativar aluno %>
-                                <button name="condicao" value="desativar" type="button" class="btn btn-primary btn-xs">Desativar</button>
-                                <button name="impressao" name="imprimir" value="Imprimir" onclick="window.print()" class="btn btn-primary btn-xs">Imprimir</button>
+                            <button name="condicao" value="imprimir" onclick="window.print()" class="btn btn-primary btn-xs">Imprimir</button>
                         </div>
                     </form>
                 </div>

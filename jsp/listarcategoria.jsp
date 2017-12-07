@@ -28,7 +28,11 @@
             margin: auto;
             width: 100%;
             bottom: 0;
+<<<<<<< HEAD
             position: fixed;
+=======
+            position: relative;
+>>>>>>> upstream/master
         }
                 </style>
 
@@ -50,7 +54,7 @@
                         <thead>
                             <tr>
                                 <th>Codigo</th>
-                                <th>Descriï¿½ï¿½o</th>
+                                <th>Descrição</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -79,8 +83,8 @@
                         <table class="table" id="myTable">
                             <tbody>
                                 <tr>
-                                    <th>Cï¿½digo</th>
-                                    <th>Descriï¿½ï¿½o</th>
+                                    <th>Código</th>
+                                    <th>Descrição</th>
                                 </tr>
                                 <tr>
                                     <td>
