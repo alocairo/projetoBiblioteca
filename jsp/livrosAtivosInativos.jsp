@@ -27,29 +27,8 @@
 <body>
     <div class="container">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="http://localhost:8080/">BIBLIOTECA</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Logout</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <!-- import the navbar -->
+        <jsp:directive.include file="nav.html" />
 
         <div class="page-header text-center">
             <h1>
@@ -85,24 +64,7 @@
     <!-- Include custom JS for searchbox -->
     <script src="./js/custom.js"></script>
 
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center">
-                <a href="https://github.com/AdrianoCh">
-                    <i class="fa fa-github-alt" aria-hidden="true"></i> AdrianoCh</a>
-            </p>
-            <p class="m-0 text-center">
-                <a href="https://github.com/alocairo">
-                    <i class="fa fa-github-alt" aria-hidden="true"></i> alocairo</a>
-            </p>
-            <p class="m-0 text-center text-white">
-                <a href="https://github.com/AdrianoCh/projetoBiblioteca">Project Avaliable Here
-                    <i class="fa fa-github-square" aria-hidden="true"></i>
-                </a>
-            </p>
-
-        </div>
-    </footer>
+    <jsp:directive.include file="footer.html" />
 </body>
 
 </html>
