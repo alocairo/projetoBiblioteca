@@ -40,7 +40,7 @@ x
 
                         </head>
 
-                        <body>
+                        <body onload="buscaDisponibilidade()">
                             <div class="container">
 
                                 <!-- import the navbar -->
@@ -93,7 +93,7 @@ x
                                                     <%= liv.getCodbib() %>
                                                 </td>
                                                 <td>
-                                                    <%= liv.getSituacaoliv() %>
+                                                    Livre
                                                 </td>
                                                 <%if (liv.getSituacaoliv().equals("Indisponivel")) {
                                         		EmprestaDAO empDAO = new EmprestaDAO();
