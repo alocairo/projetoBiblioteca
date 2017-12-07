@@ -1,12 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+x<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ page import ="java.util.List" %>
         <%@ page import ="biblio.entidades.Livros" %>
             <%@ page import ="biblio.entidades.Biblioteca" %>
                 <%@ page import ="biblio.entidades.Categoria" %>
+                <%@ page import ="biblio.jdbc.EmprestaDAO" %>
                     <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
                     <html>
-<meta charset="utf8">
+
                     <head>
                         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
                         <title>BIBLIOTECA - Livros</title>
@@ -30,14 +31,18 @@
             margin: auto;
             width: 100%;
             bottom: 0;
+<<<<<<< HEAD
+            position: fixed;
+=======
             position: relative;
+>>>>>>> upstream/master
         }
                         </style>
 
 
                     </head>
 
-                    <body onload="buscaDisponibilidade()">
+                    <body>
                         <div class="container">
 
                             <!-- import the navbar -->
@@ -51,22 +56,24 @@
                             <table class="table table-inverse" id="myTable">
                                 <thead>
                                     <tr>
-                                        <th>Cï¿½digo</th>
-                                        <th>Tï¿½tulo</th>
+                                        <th>Código</th>
+                                        <th>Título</th>
                                         <th>Editora</th>
                                         <th>Valor</th>
                                         <th>Categoria</th>
                                         <th>Biblioteca</th>
-                                        <th>Situaï¿½ï¿½o</th>
-                                        <th>Prï¿½xima Disponibilidade</th>
+                                        <th>Situação</th>
+                                        <th>Próxima Disponibilidade</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    
+                                    <!--       Apenas primeiro tr deve ser mantido, os outros serao dinï¿½micos-->
                                     <%
                 List<Livros> listaliv = (List<Livros>) request.getAttribute("listaliv");
                 
                 for (Livros liv: listaliv) {
+
+
                 %>
                                         <tr>
                                             <td>
@@ -90,6 +97,13 @@
                                             <td>
                                                 <%= liv.getSituacaoliv() %>
                                             </td>
+                                            <%if (liv.getSituacaoliv().equals("Indisponivel")) {
+                                        		EmprestaDAO empDAO = new EmprestaDAO();
+                                        	 %>
+                                            <td>
+                                            	<%= empDAO.PrevisaoLivro(liv) %>
+                                            </td>
+                                            <% } %>
                                         </tr>
                                         <% } %>
                                 </tbody>
@@ -102,13 +116,13 @@
                                 <table class="table">
                                     <tbody>
                                         <tr>
-                                            <th>Cï¿½DIGO</th>
-                                            <th>Tï¿½TULO</th>
+                                            <th>CÓDIGO</th>
+                                            <th>TÍTULO</th>
                                             <th>EDITORA</th>
                                             <th>VALOR</th>
                                             <th>CATEGORIA</th>
                                             <th>BIBLIOTECA</th>
-                                            <th>SITUAï¿½ï¿½O</th>
+                                            <th>SITUAÇÃO</th>
                                         </tr>
                                         <tr>
                                             <td>
@@ -154,7 +168,7 @@
                                             </td>
                                             <td>
                                                 <select name="altSituacao" class="form-control" id="dadoSituacaoLivro" onchange="buscaSituacaoLivro()">
-                                                    <option value="" disabled selected>SITUAï¿½ï¿½O</option>
+                                                    <option value="" disabled selected>SITUAÇÃO</option>
                                                     <option value="Livre">Livre</option>
                                                     <option value="Indisponivel">Indisponivel</option>
                                                     <option value="">Limpa Filtro</option>
@@ -178,8 +192,8 @@
                         <script src="./Style/vendor/bootstrap/js/bootstrap.min.js"></script>
                         <!-- Include custom JS for searchbox -->
                         <script src="./js/custom.js"></script>
-                        <!-- custom JS to verify avaliability -->
-                        <script src="./js/livro.js"></script>
+						<!-- custom JS to verify avaliability -->
+						<script src="./js/livro.js"></script>
 
                         <!-- import footer -->
                         <jsp:directive.include file="footer.html" />

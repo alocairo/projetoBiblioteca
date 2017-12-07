@@ -28,7 +28,11 @@
             margin: auto;
             width: 100%;
             bottom: 0;
+<<<<<<< HEAD
+            position: fixed;
+=======
             position: relative;
+>>>>>>> upstream/master
         }
                 </style>
 
@@ -49,9 +53,9 @@
                     <table class="table table-inverse" id="myTable">
                         <thead>
                             <tr>
-                                <th>Cï¿½digo</th>
+                                <th>Código</th>
                                 <th>Nome</th>
-                                <th>Endereï¿½o</th>
+                                <th>Endereço</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -81,9 +85,9 @@
                         <table class="table" id="myTable">
                             <tbody>
                                 <tr>
-                                    <th>Cï¿½]digo</th>
+                                    <th>Código</th>
                                     <th>Nome</th>
-                                    <th>Endereï¿½o</th>
+                                    <th>Endereço</th>
                                 </tr>
                                 <tr>
                                     <td>

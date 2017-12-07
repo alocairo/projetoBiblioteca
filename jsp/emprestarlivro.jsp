@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>BIBLIOTECA - Emprï¿½stimo</title>
+    <title>BIBLIOTECA - Empréstimo</title>
 
     <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +30,7 @@
             width: 100%;
             bottom: 0;
             position: relative;
+
         }
     </style>
 
@@ -44,7 +45,7 @@
 
         <div class="page-header text-center">
             <h1>
-                <i class="fa fa-handshake-o" aria-hidden="true"></i> Emprï¿½stimo</h1>
+                <i class="fa fa-handshake-o" aria-hidden="true"></i> Empréstimo</h1>
         </div>
 		<form action="empcontroller.do" method="post">
 	        <table class="table table-inverse" id="myTable">
@@ -55,7 +56,7 @@
 	                </tr>
 	            </thead>
 	            <tbody>
-	                <!--       Apenas primeiro tr deve ser mantido, os outros serao dinï¿½micos-->
+	                <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
 	                <tr>
 	                    <td>
 	
@@ -101,7 +102,7 @@
 	                    </div>
 	
 	            <button name="condicao" value="emprestar" type="submit" class="btn btn-primary btn-xs">Emprestar</button>
-	            <button name="impressao" name="imprimir" value="Imprimir" onclick="window.print()" class="btn btn-primary btn-xs">Imprimir</button>
+	            <button name="imprimir" value="Imprimir" onclick="window.print()" class="btn btn-primary btn-xs">Imprimir</button>
             </form>
         </div>
     </div>

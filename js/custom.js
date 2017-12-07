@@ -133,7 +133,7 @@ function buscaBibliotecaLivro() {
 
 function buscaSituacaoLivro() {
   filter = document.getElementById("dadoSituacaoLivro").value.toUpperCase();
-  busca(5);
+  busca(6);
 }
 
 //-----------------> Functions for Usuarios <------------------------------

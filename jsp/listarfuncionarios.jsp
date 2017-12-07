@@ -7,7 +7,7 @@
 
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-                <title>BIBLIOTECA - Funcionï¿½rios</title>
+                <title>BIBLIOTECA - Funcionários</title>
 
                 <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
                 <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,11 @@
             margin: auto;
             width: 100%;
             bottom: 0;
+<<<<<<< HEAD
+            position: fixed;
+=======
             position: relative;
+>>>>>>> upstream/master
         }
                 </style>
 
@@ -43,17 +47,17 @@
 
                     <div class="page-header text-center">
                         <h1>
-                            <i class="fa fa-id-card" aria-hidden="true"></i> Funcionï¿½rio</h1>
+                            <i class="fa fa-id-card" aria-hidden="true"></i> Funcionário</h1>
                     </div>
 
                     <table class="table table-inverse" id="myTable">
                         <thead>
                             <tr>
-                                <th>Cï¿½digo</th>
+                                <th>Código</th>
                                 <th>Nome</th>
-                                <th>Endereï¿½o</th>
+                                <th>Endereço</th>
                                 <th>Telefone</th>
-                                <th>Salï¿½rio</th>
+                                <th>Salário</th>
                                 <th>Biblioteca</th>
                             </tr>
                         </thead>
@@ -94,11 +98,11 @@
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <th>Cï¿½digo</th>
+                                    <th>Código</th>
                                     <th>Nome</th>
-                                    <th>Endereï¿½o</th>
+                                    <th>Endereço</th>
                                     <th>Telefone</th>
-                                    <th>Salï¿½rio</th>
+                                    <th>Salário</th>
                                     <th>Biblioteca</th>
                                 </tr>
                                 <tr>
