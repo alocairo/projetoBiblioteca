@@ -35,7 +35,7 @@
 
             </head>
 
-            <body>
+            <body onload="buscaDisponibilidadeAluno()">
                 <div class="container">
 
                     <!-- import the navbar -->
@@ -131,6 +131,8 @@
                 <script src="./Style/vendor/bootstrap/js/bootstrap.min.js"></script>
                 <!-- Include custom JS for searchbox -->
                 <script src="./js/custom.js"></script>
+                <!-- Include availability link -->
+                <script src="./js/aluno.js"></script>
 
                 <!-- import footer -->
                 <jsp:directive.include file="footer.html" />
