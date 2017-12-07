@@ -4,10 +4,10 @@
 <%@ page import ="biblio.entidades.Livros" %>
 <%@ page import ="biblio.entidades.Alunos" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html lang="pt-br">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>BIBLIOTECA - Empréstimo</title>
+    <title>BIBLIOTECA - EmprÃ©stimo</title>
 
     <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -45,7 +45,7 @@
 
         <div class="page-header text-center">
             <h1>
-                <i class="fa fa-handshake-o" aria-hidden="true"></i> Empréstimo</h1>
+                <i class="fa fa-handshake-o" aria-hidden="true"></i> Emprï¿½stimo</h1>
         </div>
 		<form action="empcontroller.do" method="post">
 	        <table class="table table-inverse" id="myTable">
@@ -56,7 +56,7 @@
 	                </tr>
 	            </thead>
 	            <tbody>
-	                <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
+	                <!--       Apenas primeiro tr deve ser mantido, os outros serao dinï¿½micos-->
 	                <tr>
 	                    <td>
 	

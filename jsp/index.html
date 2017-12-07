@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <title>BIBLIOTECA - Gerenciamento</title>
+    <title>BIBLIOTECA - Gerênciamento</title>
 
     <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +27,7 @@
 <body>
     <div class="container">
 
+        <!-- import the navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="./index.html">BIBLIOTECA</a>
@@ -36,7 +37,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="./index.html">Home
                             </a>
                         </li>
@@ -47,90 +48,91 @@
                 </div>
             </div>
         </nav>
+        
 
         <div class="page-header text-center">
             <h1>
                 <span></span>
-                <i class="fa fa-cogs" aria-hidden="true"></i> Administra��o</h1>
+                <i class="fa fa-cogs" aria-hidden="true"></i> Administração</h1>
         </div>
 
         <!--Panel-->
         <div class="row">
             <div class="card col-lg-4 col-md-6 mb-4">
-                <h3 class="card-header primary-color white-text">Gerenciamento de Aluno</h3>
+                <h3 class="card-header primary-color white-text">Gerênciamento de Aluno</h3>
                 <div class="card-body">
                     <h4 class="card-title">
                         <i class="fa fa-users" aria-hidden="true"></i>
                     </h4>
-                    <p class="card-text">P�gina que permite o gerenciamento de alunos.</p>
-                    <a href="./alucontroller.do" method="get" target="_self" class="btn btn-primary">Gerenciar</a>
+                    <p class="card-text">Página que permite o gerênciamento de alunos.</p>
+                    <a href="./alucontroller.do" method="get" target="_self" class="btn btn-primary">Gerênciar</a>
                 </div>
             </div>
 
             <div class="card col-lg-4 col-md-6 mb-4 h-100">
-                <h3 class="card-header primary-color white-text">Gerenciamento de Biblioteca</h3>
+                <h3 class="card-header primary-color white-text">Gerênciamento de Biblioteca</h3>
                 <div class="card-body">
                     <h4 class="card-title">
                         <i class="fa fa-building" aria-hidden="true"></i>
                     </h4>
-                    <p class="card-text">P�gina que permite o gerenciamento de bibliotecas.</p>
-                    <a href="./bibcontroller.do" method="get" target="_self" class="btn btn-primary">Gerenciar</a>
+                    <p class="card-text">Página que permite o gerênciamento de bibliotecas.</p>
+                    <a href="./bibcontroller.do" method="get" target="_self" class="btn btn-primary">Gerênciar</a>
                 </div>
             </div>
 
             <div class="card col-lg-4 col-md-6 mb-4 h-100">
-                <h3 class="card-header primary-color white-text">Gerenciamento de Categoria</h3>
+                <h3 class="card-header primary-color white-text">Gerênciamento de Categoria</h3>
                 <div class="card-body">
                     <h4 class="card-title">
                         <i class="fa fa-server" aria-hidden="true"></i>
                     </h4>
-                    <p class="card-text">P�gina que permite o gerenciamento de categoria.</p>
-                    <a href="./catcontroller.do" method="get" target="_self" class="btn btn-primary">Gerenciar</a>
+                    <p class="card-text">Página que permite o gerênciamento de categoria.</p>
+                    <a href="./catcontroller.do" method="get" target="_self" class="btn btn-primary">Gerênciar</a>
                 </div>
             </div>
 
             <div class="card col-lg-4 col-md-6 mb-4 h-100">
-                <h3 class="card-header primary-color white-text">Gerenciamento de Funcion�rio</h3>
+                <h3 class="card-header primary-color white-text">Gerênciamento de Funcionário</h3>
                 <div class="card-body">
                     <h4 class="card-title">
                         <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                     </h4>
-                    <p class="card-text">P�gina que permite o gerenciamento de funcion�rio.</p>
-                    <a href="./funccontroller.do" method="get" target="_self" class="btn btn-primary">Gerenciar</a>
+                    <p class="card-text">Página que permite o gerênciamento de funcionário.</p>
+                    <a href="./funccontroller.do" method="get" target="_self" class="btn btn-primary">Gerênciar</a>
                 </div>
             </div>
 
             <div class="card col-lg-4 col-md-6 mb-4 h-100">
-                <h3 class="card-header primary-color white-text">Gerenciamento de
+                <h3 class="card-header primary-color white-text">Gerênciamento de
                     <br> Livro</h3>
                 <div class="card-body">
                     <h4 class="card-title">
                         <i class="fa fa-book" aria-hidden="true"></i>
                     </h4>
-                    <p class="card-text">P�gina que permite o gerenciamento de livro.</p>
-                    <a href="./livcontroller.do" method="get" target="_self" class="btn btn-primary">Gerenciar</a>
+                    <p class="card-text">Página que permite o gerênciamento de livro.</p>
+                    <a href="./livcontroller.do" method="get" target="_self" class="btn btn-primary">Gerênciar</a>
                 </div>
             </div>
 
             <div class="card col-lg-4 col-md-6 mb-4 h-100">
-                <h3 class="card-header primary-color white-text">Gerenciamento de
-                    <br> Usu�rio</h3>
+                <h3 class="card-header primary-color white-text">Gerênciamento de
+                    <br> Usuário</h3>
                 <div class="card-body">
                     <h4 class="card-title">
                         <i class="fa fa-user-circle" aria-hidden="true"></i>
                     </h4>
-                    <p class="card-text">P�gina que permite o gerenciamento de login de usu�rio.</p>
-                    <a href="./logcontroller.do" method="get" target="_self" class="btn btn-primary">Gerenciar</a>
+                    <p class="card-text">Página que permite o gerênciamento de login de usuário.</p>
+                    <a href="./logcontroller.do" method="get" target="_self" class="btn btn-primary">Gerênciar</a>
                 </div>
             </div>
 
             <div class="card col-lg-4 col-md-6 mb-4 h-100">
-                <h3 class="card-header primary-color white-text">Emiss�o de Relat�rios</h3>
+                <h3 class="card-header primary-color white-text">Emissão de Relatórios</h3>
                 <div class="card-body">
                     <h4 class="card-title">
                         <i class="fa fa-file-text" aria-hidden="true"></i>
                     </h4>
-                    <p class="card-text">P�gina que permite a emiss�o de relat�rios.</p>
+                    <p class="card-text">Página que permite a emissão de relatórios.</p>
                     <a href="./livrosAtivosInativos.html" method="get" target="_blank" class="btn btn-primary">Livros com alunos Ativos / Inativos</a>
                 </div>
             </div>
@@ -144,6 +146,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./Style/vendor/bootstrap/js/bootstrap.min.js"></script>
 
+    <!-- import footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
             <p class="m-0 text-center">
@@ -159,7 +162,7 @@
                     <i class="fa fa-github-square" aria-hidden="true"></i>
                 </a>
             </p>
-
+    
         </div>
     </footer>
 </body>

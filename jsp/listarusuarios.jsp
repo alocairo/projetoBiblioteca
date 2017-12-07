@@ -3,7 +3,7 @@
 	<%@ page import ="java.util.List" %>
 	<%@ page import ="biblio.entidades.Login" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html lang="pt-br">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>BIBLIOTECA - Usuarios</title>
@@ -27,11 +27,7 @@
             margin: auto;
             width: 100%;
             bottom: 0;
-<<<<<<< HEAD
-            position: fixed;
-=======
             position: relative;
->>>>>>> upstream/master
         }
     </style>
 
@@ -46,7 +42,7 @@
 
         <div class="page-header text-center">
             <h1>
-                <i class="fa fa-id-card" aria-hidden="true"></i> Usuarios</h1>
+                <i class="fa fa-id-card" aria-hidden="true"></i> Usuários</h1>
         </div>
 
         <table class="table table-inverse" id="myTable">
@@ -76,13 +72,13 @@
         </table>
 
         <h2>
-            <i class="fa fa-users" aria-hidden="true"></i> Gerenciar Usuarios</h2>
+            <i class="fa fa-users" aria-hidden="true"></i> Gerênciar Usuarios</h2>
 
         <form>
             <table class="table">
                 <tbody>
                     <tr>
-                        <th>Codigo</th>
+                        <th>Código</th>
                         <th>Login</th>
                     </tr>
                     <tr>
