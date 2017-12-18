@@ -1,0 +1,164 @@
+
+-- Database: "biblioAC"
+
+-- DROP DATABASE "biblioAC";
+
+CREATE DATABASE "biblioAC"
+  WITH OWNER = postgres
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'Portuguese_Brazil.1252'
+       LC_CTYPE = 'Portuguese_Brazil.1252'
+       CONNECTION LIMIT = -1;
+
+
+
+
+
+
+
+-- Table: public.alunos
+
+-- DROP TABLE public.alunos;
+
+CREATE TABLE public.alunos
+(
+  codmatricula integer NOT NULL,
+  nome character varying(50),
+  endereco character varying(80),
+  situacao character varying(7),
+  CONSTRAINT codmatricula PRIMARY KEY (codmatricula)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.alunos
+  OWNER TO postgres;
+
+
+
+
+
+-- Table: public.biblioteca
+
+-- DROP TABLE public.biblioteca;
+
+CREATE TABLE public.biblioteca
+(
+  codbib integer NOT NULL,
+  nome character varying(50),
+  endereco character varying(80),
+  CONSTRAINT codbib PRIMARY KEY (codbib)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.biblioteca
+  OWNER TO postgres;
+
+
+
+-- Table: public.categoria
+
+-- DROP TABLE public.categoria;
+
+CREATE TABLE public.categoria
+(
+  codcategoria integer NOT NULL,
+  descricao character varying(15),
+  CONSTRAINT codcategoria PRIMARY KEY (codcategoria)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.categoria
+  OWNER TO postgres;
+
+
+
+
+
+
+-- Table: public.empresta
+
+-- DROP TABLE public.empresta;
+
+CREATE TABLE public.empresta
+(
+  codmatricula integer NOT NULL,
+  codlivro integer NOT NULL,
+  dtretirada date NOT NULL,
+  dtprevisao date,
+  dtentrega date,
+  CONSTRAINT "primary" PRIMARY KEY (codmatricula, codlivro, dtretirada),
+  CONSTRAINT alunos FOREIGN KEY (codmatricula)
+      REFERENCES public.alunos (codmatricula) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT livros FOREIGN KEY (codlivro)
+      REFERENCES public.livros (codlivro) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.empresta
+  OWNER TO postgres;
+
+
+
+
+
+-- Table: public.funcionario
+
+-- DROP TABLE public.funcionario;
+
+CREATE TABLE public.funcionario
+(
+  codfunc integer NOT NULL,
+  nome character varying(15),
+  "endereço" character(80),
+  telefone character varying(11),
+  salario double precision,
+  codbib integer,
+  CONSTRAINT codfunc PRIMARY KEY (codfunc),
+  CONSTRAINT codbibfk FOREIGN KEY (codbib)
+      REFERENCES public.biblioteca (codbib) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.funcionario
+  OWNER TO postgres;
+
+
+
+
+
+-- Table: public.livros
+
+-- DROP TABLE public.livros;
+
+CREATE TABLE public.livros
+(
+  codlivro integer NOT NULL,
+  titulo character varying(80),
+  editora character varying(50),
+  valor double precision,
+  codcategoria integer,
+  codbib integer,
+  situacao character varying(12),
+  CONSTRAINT codlivro PRIMARY KEY (codlivro),
+  CONSTRAINT codbib FOREIGN KEY (codbib)
+      REFERENCES public.biblioteca (codbib) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT codcategoria FOREIGN KEY (codcategoria)
+      REFERENCES public.categoria (codcategoria) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.livros
+  OWNER TO postgres;
+
