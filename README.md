@@ -66,11 +66,13 @@ What things you need to install the software and how to install them.
 
 In order to run the project, you will need the following:
 
-Ecipse IDE - I personaly recomend Mars version.<br>
-PostgreSQL - You can find a SQL with the database [here](https://github.com/AdrianoCh/projetoBiblioteca/blob/master/DataBase/DB.txt), you need to paste each block of code sperately in a SQL executener.<br>
-PgAdmin - You will need to menage the database, and to do the instruction above.<br>
-Tomcat - We used the 8.0 version, its the most compatible.<br>
-JDK<br>
+<ol>
+    <li>Ecipse IDE - I personaly recomend Mars version.</li>
+    <li>PostgreSQL - You can find a SQL with the database [here](https://github.com/AdrianoCh/projetoBiblioteca/blob/master/DataBase/DB.txt), you need to paste each block of code sperately in a SQL executener.</li>
+    <li>PgAdmin - You will need to menage the database, and to do the instruction above.</li>
+    <li>Tomcat - We used the 8.0 version, its the most compatible.</li>
+    <li>JDK.</li>
+</ol>
 
 ### Installing
 
