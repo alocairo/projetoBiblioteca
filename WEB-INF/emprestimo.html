@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BIBLIOTECA - Emrpéstimo</title>
+
+    <link rel="stylesheet" href="./Style/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="./Style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--    <link href="/css/shop-homepage.css" rel="stylesheet" type="text/css">-->
+
+    <link href="./img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <style>
+        body {
+            padding-top: 80px;
+            word-wrap: break-word;
+        }
+
+        .margin-fix {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin: auto;
+            width: 100%;
+            bottom: 0;
+            position: relative;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="http://localhost:8080/">BIBLIOTECA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="page-header text-center">
+            <h1>
+                <i class="fa fa-handshake-o" aria-hidden="true"></i> Empréstimo</h1>
+        </div>
+
+        <table class="table table-inverse" id="myTable">
+            <thead>
+                <tr>
+                    <th>Livro</th>
+                    <th>Usuario Destino</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--       Apenas primeiro tr deve ser mantido, os outros serao dinâmicos-->
+                <tr>
+                    <td>
+                        <select class="form-control" onchange="comprovante()">
+                            <option value="" disabled selected>LIVRO</option>
+                            <option value="Pegar do Banco 01">Pegar do banco 01</option>
+                            <option value="Pegar do Banco 02">Pegar do banco 02</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="form-control" onchange="comprovante()">
+                            <option value="" disabled selected>Usuario</option>
+                            <option value="Pegar do Banco 01">Pegar do banco 01</option>
+                            <option value="Pegar do Banco 02">Pegar do banco 02</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="container margin-fix">
+                <div class="card col-lg-4 col-md-6 mb-4 h-100">
+                        <h3 class="card-header primary-color white-text" id="entrega"></h3>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <i class="fa fa-file-text" aria-hidden="true"></i>
+                            </h4>
+                            <p class="card-text" id="destino"></p>
+                            <p id="data"></p>
+                            <p id="devolucao"></p>
+                        </div>
+                    </div>
+
+            <button type="button" class="btn btn-primary btn-xs">Emprestar</button>
+            <button name="impressao" name="imprimir" value="Imprimir" onclick="window.print()" class="btn btn-primary btn-xs">Imprimir</button>
+
+
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./Style/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Include custom JS for searchbox -->
+    <script src="./js/custom.js"></script>
+    <!-- include custom JS for Date -->
+    <script src="./js/comprovante.js"></script>
+
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center">
+                <a href="https://github.com/AdrianoCh">
+                    <i class="fa fa-github-alt" aria-hidden="true"></i> AdrianoCh</a>
+            </p>
+            <p class="m-0 text-center">
+                <a href="https://github.com/alocairo">
+                    <i class="fa fa-github-alt" aria-hidden="true"></i> alocairo</a>
+            </p>
+            <p class="m-0 text-center text-white">
+                <a href="https://github.com/AdrianoCh/projetoBiblioteca">Project Avaliable Here
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                </a>
+            </p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
