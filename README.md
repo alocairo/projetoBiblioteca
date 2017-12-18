@@ -1,74 +1,101 @@
-# projetoBiblioteca Version 0.1 Added the following views :
+# Projeto Biblioteca
 
-<strong>Work in Progress:</strong>
+This is a college project and have as main objective to put in practice our knowledge about web development using Java EE, and any other technology we may think necessary in the project.
+
+This system is build to be used in a library management, the core functions are:
+
 <ul>
-    <li>&#9745; Criar as tabelas no banco de dados e Carregar os dados pré-definidos.</li>
-    <li>&#9744; Fazer as telas de Cadastro:
-        <ul>&#9745; FRONT &#9745; BACK - Aluno;
-            <br>&#9745; FRONT &#9745; BACK - Livro;
-            <br>&#9745; FRONT &#9745; BACK - Categoria;
-            <br>&#9745; FRONT &#9745; BACK - Funcionario;
-            <br>&#9745; FRONT &#9745; BACK - Biblioteca;
-            <br>&#9745; FRONT - Index;
-            <br>&#9744; e demais que achar necessário.
-        </ul>
-    </li>
-    <li>&#9744;Possibilidade de Atualização dos Dados:
-        <ul>&#9745; HTML &#9745; BACK - Aluno;
-            <br>&#9745; FRONT &#9745; BACK - Funcionario;
-            <br>&#9745; FRONT &#9745; BACK - Livro;
-            <br>&#9745; FRONT &#9745; BACK - Biblioteca;
-            <br>&#9745; FRONT &#9745; BACK - Categoria;
-            <br>&#9744; e demais que achar necessario.
-        </ul>
-    </li>
-    <li>&#9744;Sistema de buscas:
-        <ul> &#9744; FRONT &#9745; BACK - Livro,
-            <br>&#9745; FRONT &#9745; BACK - Aluno,
-            <br>&#9745; FRONT &#9745; BACK - Categorias</ul>
-    </li>
-    <li>Pesquisar por livro:
-        <ul>
-            <li>&#9745; FRONT &#9744; BACK Mostrar se o livro está disponivel ou não
-                <ul>
-                    <li>Caso disponível: Link direto para o sistema de empréstimo</li>
-                    <li>Caso indisponivel: Mostrar os dados de quando este livro estará disponível novamente</li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>Pesquisa por Aluno:
-        <ul>
-            &#9744; FRONT &#9744; BACK Mostrar situação do aluno
-            <ul>
-                <li>Caso Ativo: Link direto para o sistema de empréstimo</li>
-                <li>Caso Inativo: Mostrar os dados de quando este livro estará disponível novamente</li>
-            </ul>
-        </ul>
-    </li>
-    <li>Possibilidade de Exclusão (Deletar)
-        <ul>
-            Deve ser possível deletar:
-            <ul>&#9745; Categoria;
-                <br>&#9745; Funcionario.</ul>
-            <strong>No Entanto não deve ser excluído do sistema: aluno, livro, emprestimo</strong>
-        </ul>
-    </li>
-    <li>Criar Relatório:
-        <ul>
-            &#9744; FRONT &#9744; BACK Empréstimos;
-            <br>&#9744; FRONT &#9744; BACK Por um determinado;
-            <br>&#9744; FRONT &#9744; BACK Movimentação do livro;
-            <br>&#9744; FRONT &#9744; BACK Historíco por aluno;
-            <br>&#9744; FRONT &#9744; BACK alunos ativos;
-            <br>&#9744; FRONT &#9744; BACK alunos inativos;
-            <br>&#9744; FRONT &#9744; BACK Quantidade de livro com alunos ativos;
-            <br>&#9744; FRONT &#9744; BACK Quantidade de livros com alunos inativos.
-        </ul>
-    </li>
-    <li>Opcional:
-        <ul>
-            <li>Renovação do Livro: Mais 15 dias</li>
-        </ul>
+    <li>Students Management
+        <ol>
+            <li>Include Sudents</li>
+            <li>Update Students</li>
+        </ol>
     </li>
 </ul>
+
+<ul>
+    <li>Employee Management
+        <ol>
+            <li>Include Employee</li>
+            <li>Delete Employee</li>
+            <li>Update Employee</li>
+        </ol>
+    </li>
+</ul>
+
+<ul>
+    <li>Book Management
+        <ol>
+            <li>Include Book</li>
+            <li>Update Book</li>
+        </ol>
+    </li>
+</ul>
+
+<ul>
+    <li>Library Management
+        <ol>
+            <li>Include Library</li>
+            <li>Delete Library</li>
+            <li>Update Library</li>
+        </ol>
+    </li>
+</ul>
+
+<ul>
+    <li>Genre Management
+        <ol>
+            <li>Include Genre</li>
+            <li>Delete Genre</li>
+            <li>Update Genre</li>
+        </ol>
+    </li>
+</ul>
+
+Search functions are included in the pages, for help the usability. A report system was included as well, but not all functionalities are working,i may say its 90% finished.
+
+The books lend can be renewed after 15 days and a new column in the books table will show the next availability of a borrow book.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+What things you need to install the software and how to install them.
+
+In order to run the project, you will need the following:
+
+Ecipse IDE - I personaly recomend Mars version.
+PostgreSQL - You can find a SQL with the database [here](https://github.com/AdrianoCh/projetoBiblioteca/blob/master/DataBase/DB.txt), you need to paste each block of code sperately in a SQL executener.
+PgAdmin - You will need to menage the database, and to do the instruction above.
+Tomcat - We used the 8.0 version, its the most compatible.
+JDK 
+
+### Installing
+
+Import the WAR file to your Eclipse, or clone all master branch and paste in your workspace(if you dont have much experience with Java i highly recomed you to import the WAR file).
+
+Ensure that Tomcat is configured and running.
+
+Build Path fallowing this [instruncions](https://github.com/AdrianoCh/projetoBiblioteca/tree/master/BuildPath)
+
+Run the project in server.
+
+## Built With
+
+* [Eclipse IDE](http://www.eclipse.org/downloads/eclipse-packages/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Brackets](http://brackets.io/)
+
+## Contributing
+
+Feel free to contribute, submit pull requests for us.
+## Authors
+
+* **Adriano Chaves** - [AdrianoCh](https://github.com/AdrianoCh)
+* **Carlos** - [alocairo](https://github.com/alocairo)
+
+## License
+
+This project is licensed under the GNU License - see the [LICENSE.md](LICENSE.md) file for details
