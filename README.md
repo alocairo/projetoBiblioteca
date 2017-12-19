@@ -72,6 +72,7 @@ In order to run the project, you will need the following:
     <li>PgAdmin - You will need to manage the database, and to do the instruction above.</li>
     <li>Tomcat - We used the 8.0 version, its the most compatible.</li>
     <li>JDK.</li>
+    <li>Build Path - You need to do <a href="https://github.com/AdrianoCh/projetoBiblioteca/tree/master/BuildPath"> this</a> before run for the first time</li>
 </ol>
 
 ### Installing
