@@ -69,7 +69,7 @@ In order to run the project, you will need the following:
 <ol>
     <li>Eclipse IDE - I personaly recomend Mars version.</li>
     <li>PostgreSQL - You can find a SQL with the database <a href="https://github.com/AdrianoCh/projetoBiblioteca/blob/master/DataBase/DB.txt">here</a>, you need to paste each block of code sperately in a SQL executener.</li>
-    <li>PgAdmin - You will need to menage the database, and to do the instruction above.</li>
+    <li>PgAdmin - You will need to manage the database, and to do the instruction above.</li>
     <li>Tomcat - We used the 8.0 version, its the most compatible.</li>
     <li>JDK.</li>
 </ol>
@@ -80,7 +80,7 @@ Import the WAR file to your Eclipse, or clone all master branch and paste in you
 
 Ensure that Tomcat is configured and running.
 
-Build Path fallowing this [instruncions](https://github.com/AdrianoCh/projetoBiblioteca/tree/master/BuildPath)
+Build Path fallowing this [instrucions](https://github.com/AdrianoCh/projetoBiblioteca/tree/master/BuildPath)
 
 Run the project in server.
 
